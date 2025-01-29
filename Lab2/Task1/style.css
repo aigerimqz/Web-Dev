@@ -34,6 +34,12 @@ body{
     padding: 0 0 20px;
 }
 .content__form {
+    background-color: #fff;
+    margin-top: 40px;
+    height: 348.83px;
+    width: 396px;
+    padding-top: 16px;
+    padding-bottom: 24px;
 }
 .form__top {
 }
