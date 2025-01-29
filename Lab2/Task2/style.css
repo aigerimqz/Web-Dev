@@ -6,12 +6,15 @@ body{
 
 .container {
     margin: 0 auto;
+    margin-top: 32px;
     max-width: 935px;
-    margin: 32px 0 0 0;
+
+    
 }
 .content {
     display: flex;
     justify-content: space-between;
+    
     
 }
 .content__image {
