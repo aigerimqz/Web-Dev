@@ -117,6 +117,7 @@ body{
 }
 
 .button__green {
+    margin-top: 0px;
     background-color: #42b72a;
     width: 192.61px;
     font-size: 17px;
@@ -126,10 +127,20 @@ body{
     cursor: pointer;
 }
 .form__bottom {
+    margin: 28px 0 0;
+    text-align: center;
+    color: #1c1e21;
+    font-size: 14px;
 }
 .form__text {
 }
 .form__text__bold {
+    color: #1c1e21;
+    font-weight: 600;
+    text-decoration: none;
+}
+.form__text__bold:hover{
+    text-decoration: underline;
 }
 .footer {
 }
