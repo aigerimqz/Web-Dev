@@ -59,7 +59,7 @@ body{
 }
 .form__input input{
     padding: 9px 0 7px 8px;
-    width: 268.4px;
+    width: 261.4px;
     height: 20.6px;
     background-color: #121212;
     border: 1px solid rgb(85, 85, 85);
@@ -74,14 +74,34 @@ body{
     padding-top: 10px;
 }
 .form__button {
+    width: 268.4px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(0, 149, 246);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
 }
 .form__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
 }
 .line__left {
+    border-top: 1px solid rgb(38, 38, 38);
+    width: 107.24px;
 }
 .line__text {
+    color: rgb(54, 54, 54);
+    font-size: 14px;
+    font-weight: bold;
 }
 .line__right {
+    border-top: 1px solid rgb(38, 38, 38);
+    width: 107.24px;
 }
 .form__facebook img{
     width: 20px;
