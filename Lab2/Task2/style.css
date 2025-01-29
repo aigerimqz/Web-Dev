@@ -34,13 +34,12 @@ body{
 
 }
 .form__login {
-    /* display: flex;
-    flex-direction: column; */
-    height: 387px;
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
     border:rgb(54, 54, 54) 1px solid;
     border-radius: 1px;
-    padding: 12px;
+    padding: 12px 0;
+    margin-bottom: 10px;
 }
 .form__inner {
     display: flex;
@@ -163,13 +162,18 @@ body{
 .form__app {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 .form__apptext {
+    margin: 10px 0;
     color: #f5f5f5;
     font-size: 14px;
 }
 .form__apps {
+
+    
+    margin: 10px 0;
 }
 .form__app__google img{
     width: 134.28px;
