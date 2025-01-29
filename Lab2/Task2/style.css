@@ -16,6 +16,7 @@ body{
 .content {
     display: flex;
     justify-content: center;
+    padding-bottom: 32px;
     
     
 }
@@ -184,14 +185,51 @@ body{
 .footer {
 }
 .footer__container {
+    max-width: 935px;
+    margin: 0 auto;
+
 }
 .footer__navigation {
+    
 }
-.footer__list {
+.footer__list li{
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    list-style: none;
+    font-size: 12px;
+    padding: 0 8px 8px 8px;
+    
+
+}
+.footer__list li a{
+    color: #a8a8a8;
+    text-decoration: none;
 }
 .footer__interface {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footer__lang {
-}
+
 .footer__copyright {
+    color: #a8a8a8;
+    font-size: 12px;
+}
+
+
+select {
+    background-color: #000000; /* Blue background */
+    color: #a8a8a8; /* White text */
+    /* padding: 5px; */
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    width: 75px;
+    text-align: center;
+
+}
+.footer__lang{
+    padding: 0 10px 5px 0;
 }
