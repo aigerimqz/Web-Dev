@@ -77,12 +77,34 @@ body{
     color:#
 } */
 .form__button {
+    width: 364px;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+
+
+
 }
+
 .button__blue {
+    background-color: #0866ff;
 }
 .form__forgot {
+    height: 48px;
+    margin: 16px 0 0;
 }
 .form__link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #0866ff;
+    
+}
+.form__link:hover{
+    text-decoration: underline;
 }
 .form__line {
 }
