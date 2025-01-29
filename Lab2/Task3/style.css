@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.header {
+}
+.header__container {
+    margin: 0 auto;
+    max-width: 1092.25px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__left {
+}
+.header__logo {
+}
+.header__navigations {
+}
+.header__right {
+}
+.header__all {
+}
+.header__search {
+}
+.header__shopping {
+}
+.header__login {
+}
+.container {
+}
+.content {
+}
+.content__welcome {
+}
+.welcome__learnmore {
+}
+.welcome__images {
+}
+.content__navigation {
+}
+.content__item {
+}
+.content__shop {
+}
+.content__box {
+}
+.box__img {
+}
+.box__info {
+}
+.box__bigtext {
+}
+.box__smalltext {
+}
+.box__btn {
+}
+.box__button {
+}
