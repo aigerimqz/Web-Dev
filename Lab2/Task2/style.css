@@ -56,10 +56,10 @@ body{
     height: 53px;
 
 }
-.form__input {
-    /* padding: 25px 0; */
+/* .form__input {
+   
     
-}
+*/
 .form__input input{
     padding: 9px 0 7px 8px;
     width: 261.4px;
@@ -91,6 +91,10 @@ body{
     font-size: 14px;
     font-weight: 600;
     padding: 7px 16px;
+    cursor: pointer;
+}
+.form__btn:hover{
+    background-color: #004ce3;
 }
 .form__line {
     display: flex;
@@ -130,6 +134,9 @@ body{
     color: rgb(0, 149, 246);
     text-decoration: none;
     font-weight: 600;
+}
+.form__loginwith:hover{
+    color: white;
 }
 .form__forgot {
     padding: 0;
@@ -182,16 +189,16 @@ body{
 .form__app__microsoft img{
     width: 110.76px;
 }
-.footer {
-}
+/* .footer {
+} */
 .footer__container {
     max-width: 935px;
     margin: 0 auto;
 
 }
-.footer__navigation {
+/* .footer__navigation {
     
-}
+} */
 .footer__list li{
     display: inline-block;
     align-items: center;
@@ -232,4 +239,7 @@ select {
 }
 .footer__lang{
     padding: 0 10px 5px 0;
+}
+li a:hover, a:hover{
+    text-decoration: underline;
 }
