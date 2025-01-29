@@ -4,22 +4,42 @@ body{
     font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .header {
+    font-size: 13px;
+    color: #262626;
 }
 .header__container {
     margin: 0 auto;
     max-width: 1092.25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header__logo {
+.header__logo{
+    padding: 16px 16px 16px 10px;
+}
+.header__logo img{
+    width: 108px;
 }
 .header__navigations {
 }
-.header__right {
+.header__navigations a{
+    padding: 16px 8px 10px;
+    color: #262626;
+    text-decoration: none;
 }
-.header__all {
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__all a{
+    text-decoration: none;
+    color:#262626;
 }
 .header__search {
 }
