@@ -60,7 +60,7 @@ body{
 .form__input{
     padding: 6px 0;
 }
-.form__input:first-child{
+.form__email{
     padding-top: 0px;
 }
 .form__input input{
