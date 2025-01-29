@@ -95,7 +95,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
+    padding: 7px 0;
 }
 .line__left {
     border-top: 1px solid #262626;
@@ -115,7 +115,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
+    padding: 20px 0;
 }
 .form__facebook img{
     width: 20px;
@@ -131,7 +131,7 @@ body{
     font-weight: 600;
 }
 .form__forgot {
-    padding: 5px 0;
+    padding: 0;
 }
 .form__forgotlink {
     text-decoration: none;
