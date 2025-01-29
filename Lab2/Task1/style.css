@@ -14,10 +14,17 @@ body{
 .content {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 112px;
+    padding-top: 72px;
 }
 .content__welcome {
 }
-.content__logo {
+.content__logo{
+    padding: 0 0 24px;
+}
+.content__logo img{
+    height: 106px;
+    margin: -28px;
 }
 .content__text {
 }
