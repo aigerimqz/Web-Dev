@@ -1,5 +1,5 @@
 body{
-    background-color: #fff;
+    background-color: #f2f4f7;
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,21 +12,26 @@ body{
 
 }
 .content {
+
     display: flex;
     justify-content: space-between;
     padding-bottom: 112px;
     padding-top: 72px;
 }
 .content__welcome {
+    /* padding: 112px 0 16px; */
 }
 .content__logo{
-    padding: 0 0 24px;
+    padding: 112px 0 16px;
 }
 .content__logo img{
     height: 106px;
     margin: -28px;
 }
 .content__text {
+    font-size: 28px;
+    font-weight: normal;
+    padding: 0 0 20px;
 }
 .content__form {
 }
