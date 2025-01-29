@@ -71,8 +71,14 @@ body{
     font-size: 17px;
     width: 330px;
     height: 20.4px;
+}    
+.form__input input:focus{
+    border-color: #0866ff;
+    outline: none;
+    caret-color: #0866ff;
     
 }
+
 /* .form__input input::placeholder{
     color:#
 } */
