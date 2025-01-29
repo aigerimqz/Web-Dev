@@ -77,13 +77,12 @@ body{
     color:#
 } */
 .form__button {
-    width: 364px;
+    
     height: 48px;
     border-radius: 6px;
     border: none;
     margin-top: 12px;
     color: #ffffff;
-    font-size: 20px;
     font-weight: bold;
 
 
@@ -92,6 +91,12 @@ body{
 
 .button__blue {
     background-color: #0866ff;
+    width: 364px;
+    font-size: 20px;
+}
+.button__blue:hover{
+    background-color: #3578E5;
+    cursor: pointer;
 }
 .form__forgot {
     margin: 16px 0 0;
@@ -112,6 +117,13 @@ body{
 }
 
 .button__green {
+    background-color: #42b72a;
+    width: 192.61px;
+    font-size: 17px;
+}
+.button__green:hover{
+    background-color: #00A400;
+    cursor: pointer;
 }
 .form__bottom {
 }
