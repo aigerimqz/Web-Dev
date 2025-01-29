@@ -6,7 +6,9 @@ body{
 }
 .container {
     margin: 0 auto;
-    padding: 20px 0;
+    
+    padding-bottom: 112px;
+    padding-top: 72px;
     width: 980px;
 
 
@@ -15,8 +17,8 @@ body{
 
     display: flex;
     justify-content: space-between;
-    padding-bottom: 112px;
-    padding-top: 72px;
+    padding: 20px 0;
+    
 }
 .content__welcome {
     /* padding: 112px 0 16px; */
@@ -148,8 +150,14 @@ body{
 .form__text__bold:hover{
     text-decoration: underline;
 }
+
 .footer {
-    padding: 20px 0 0;
+    background-color: #fff; 
+    padding: 20px 0;
+}
+.footer__container{
+    margin: 0 auto;
+    width: 980px;
 }
 .footer__languages {
     font-size: 12px;
