@@ -6,7 +6,6 @@ body{
 }
 .container {
     margin: 0 auto;
-    
     padding-bottom: 112px;
     padding-top: 72px;
     width: 980px;
@@ -17,12 +16,14 @@ body{
 
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
     
 }
-.content__welcome {
-    /* padding: 112px 0 16px; */
-}
+/* .content__welcome {
+    padding: 112px 0 16px; 
+}*/
+
 .content__logo{
     padding: 112px 0 16px;
 }
@@ -35,14 +36,9 @@ body{
     font-weight: normal;
     padding: 0 0 20px;
 }
-.content__form {
+/* .content__form {
     
-    /* margin-top: 40px;
-    height: 348.83px;
-    width: 396px;
-    padding-top: 16px;
-    padding-bottom: 24px; */
-}
+} */
 .form__top {
     background-color: #fff;
     margin-top: 40px;
@@ -92,11 +88,14 @@ body{
     margin-top: 12px;
     color: #ffffff;
     font-weight: bold;
+    
 
 
 
 }
-
+.form__buttongreen{
+    padding: 6px 0 0 0;
+}
 .button__blue {
     background-color: #0866ff;
     width: 364px;
@@ -129,6 +128,7 @@ body{
     background-color: #42b72a;
     width: 192.61px;
     font-size: 17px;
+    
 }
 .button__green:hover{
     background-color: #00A400;
@@ -165,7 +165,8 @@ body{
 
 }
 .footer__list{
-    padding-left: 0;
+    padding: 8px 0 0 0;
+    margin: 0;
 }
 .footer__list li{
     display: inline-block;
@@ -196,7 +197,7 @@ body{
 }
 .footer__line {
     border-top: 1px solid #dadde1;
-    margin-bottom: 8px;
+    margin: 10px 0 8px 0;
     width: 100%;
 }
 .footer__navigation{
