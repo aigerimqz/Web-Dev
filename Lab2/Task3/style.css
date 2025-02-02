@@ -90,21 +90,31 @@ body{
 .welcome__button{
     background-color: #fff;
     padding: 50px 50px;
-    height: 100px;
-    width: 300px;
-    padding: 30px 30px;
+    max-height: 50%;
+    max-width: 50%;
+    margin-right: 150px;
+    padding: 40px 40px;
+    box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
 
 }
 .welcome__htext{
+    font-size: 29px;
+    font-weight: 650;
 
 }
 .welcome__ltext{
+    line-height: 25px;
 
 }
 .welcome__btn{
+    margin-top: 30px;
+}
+.welcome__btnn{
     background-color: #0067b8;
     font-size: 16px;
     color: #fff;
+    padding: 10px 12px;
+    border: none ;
 }
 .content__navigation {
     display: flex;
