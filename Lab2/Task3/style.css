@@ -25,8 +25,15 @@ body{
 .header__logo img{
     width: 108px;
 }
-.header a:hover, .content__welcome a:hover{
+.header a:hover{
+    text-decoration: underline 1.5px;
+    text-underline-offset: 5px;
+}
+.content__welcome a:hover{
     text-decoration: underline;
+}
+.header__login a:hover{
+    text-decoration: none;
 }
 .header__navigations a{
     padding: 16px 8px 10px;
@@ -89,6 +96,28 @@ body{
     width: 18px;
     margin-top: 3px;
     margin-left: 5px;
+}
+.welcome__imagesbtn{
+    display: flex;
+    justify-content: center;
+    
+}
+.welcome__imagesbtn ul{
+   padding: 0;
+}
+.welcome__imagesbtn li{
+    display: inline-block;
+    
+    list-style: none;
+    
+    
+
+}
+.welcome__imagesbtn li img{
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    /* width: 16px; */
 }
 .welcome__images {
     background-image: url("./images/copilot_bg.jpg");
