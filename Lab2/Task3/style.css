@@ -57,12 +57,14 @@ body{
 .content {
 }
 .content__welcome {
+    
 }
 .welcome__learnmore {
     background-color: #0067b8;
-    max-width: 100%;
-    padding: 100px 100px;
-    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
     align-items: center;
 }
 .welcome__learnmore a{
@@ -72,6 +74,11 @@ body{
     font-size: 16px;
 }
 .welcome__images {
+    background-image: url("./images/copilot_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 .content__navigation {
     display: flex;
