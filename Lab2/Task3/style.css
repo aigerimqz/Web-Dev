@@ -91,7 +91,7 @@ body{
 }
 .welcome__htext, .box__htext{
     font-size: 29px;
-    font-weight: 650;
+    font-weight: 600;
 
 }
 .welcome__ptext, .box__ptext{
@@ -147,12 +147,16 @@ body{
 }
 .content__box {
     display: flex;
+
     justify-content: space-between;
 
 }
 .box__item{
-    width: 323.812px;
-    height: 477.100px;
+    max-width: 323.812px;
+    /* height: 477.100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
 
@@ -161,12 +165,20 @@ body{
     width: 100%;
 }
 .box__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
 }
-.box__bigtext {
+.box__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .box__smalltext {
 }
 .box__btn {
+    padding: 16px 24px 24px;
 }
 .box__button {
 }
