@@ -47,15 +47,7 @@ body{
 }
 .header__login {
 }
-.container {
-    margin: 0 auto;
-    max-width: 1213.59px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.content {
-}
+
 .content__welcome {
     
 }
@@ -116,9 +108,19 @@ body{
     padding: 10px 12px;
     border: none ;
 }
-.content__navigation {
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.content {
+}
+.content__navigation {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .content__item {
