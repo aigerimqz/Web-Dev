@@ -21,13 +21,14 @@ body{
 .container {
     margin: 0 auto;
     padding: 50px 0;
+    max-width: 720px;
     
 }
 .content {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 .content__tittle {
     font-size: 36px;
@@ -37,23 +38,25 @@ body{
 .content__form {
     padding: 20px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.content__input {
+.content__input input{
     padding: 10px 10px;
     width: 400px;
+    border-radius: 6px;
+    border: 0.1px solid;
 
 }
 .content__btn {
-    padding: 10px 10px;
+    padding: 10px 30px;
 
 
 }
 .content__button {
     background-color: blueviolet;
     color: white;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border-radius: 6px;
     border: none;
     font-size: 16px;
