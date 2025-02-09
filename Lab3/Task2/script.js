@@ -7,6 +7,10 @@ function addTask() {
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.onchange = () => li.classList.toggle("completed");
+
+    li.append(checkbox, task);
+    document.getElementById("taskList").appendChild(li);
+    input.value = "";
     
     
 }
