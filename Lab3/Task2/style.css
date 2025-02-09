@@ -5,18 +5,31 @@
 header {
     background-color: rgb(56, 3, 105);
     padding: 10px 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
 
 }
+
 .header__text {
-    font-size: 48px;
+    font-size: 36px;
     color: rgb(182, 179, 229);
     font-weight: 600;
 
 }
+.header__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.header__icon img{
+    width: 36px;
+}
 body{
-    /* background-image: url("./images/bck.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
+    padding: 0;
+    margin: 0;
 }
 .container {
     margin: 0 auto;
@@ -49,7 +62,7 @@ body{
 
 }
 .content__btn {
-    padding: 10px 30px;
+    padding-left: 30px;
 
 
 }
@@ -77,6 +90,7 @@ body{
     background-color: rgb(191, 167, 214);
     padding: 10px;
     margin: 8px 0;
+    border-radius: 4px;
     
 }
 .completed{
