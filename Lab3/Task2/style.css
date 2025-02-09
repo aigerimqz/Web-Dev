@@ -79,6 +79,24 @@ body{
     color: black;
 
 }
+.checkbox_task{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+.text__task{
+    padding-left: 20px;
+}
 ul{
+    align-items: center;
+}
+.delete-btn{
+    
+    background: none;
+    cursor: pointer;
+    border: none;
 
+}
+.delete-btn img{
+    width: 24px;
 }

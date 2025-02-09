@@ -4,19 +4,31 @@ function addTask() {
     if (!task) return;
 
     let li = document.createElement("li");
+
+    let taskContainer = document.createElement("div");
+    taskContainer.className = "checkbox_task";
+
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.onchange = () => li.classList.toggle("completed");
 
-    let taskLine = document.createElement("span");
-    taskLine.textContent = task;
+    
+    let taskText = document.createElement("span");
+    taskText.textContent = task;
+    taskText.className = "text__task"
+
+    taskContainer.append(checkbox, taskText);
 
     let deleteBtn = document.createElement("button");
-    // 
-    deleteBtn.className = "delete__btn";
+    deleteBtn.className = "delete-btn";
     deleteBtn.onclick = () => li.remove();
 
-    li.append(checkbox, task);
+    let trashIcon = document.createElement("img");
+    trashIcon.src = "./images/trash.png";
+    
+    deleteBtn.appendChild(trashIcon);
+    checkbox.className, task.className = "checkbox_task";
+    li.append(taskContainer, deleteBtn);
     document.getElementById("taskList").appendChild(li);
     input.value = "";
     
