@@ -23,3 +23,10 @@ function truncate(str, maxlength) {
     return (str.length > maxlength) ?
       str.slice(0, maxlength - 1) + '…' : str;
 }
+
+//4
+function extractCurrencyValue(str){
+    let num
+    num = str.slice(1);
+    return +num;
+}
