@@ -19,19 +19,21 @@
             </div>
             <div class="content__form">
                 <div class="content__input">
-                    <input type="text" class = "content__input" placeholder="New Task">
+                    <input id="taskInput" placeholder="New task">
 
                 </div>
                 <div class="content__btn">
-                    <button onclick="addingTask()" class="content__button">Add</button>
+                    <button onclick="addTask()">Add</button>
                 </div>
             </div>
             <div class="content__list">
-                <ul class="content__tasks"></ul>
+                <ul id="taskList"></ul>
             </div>
 
         </div>
+    
+        
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
