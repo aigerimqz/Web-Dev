@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do app</title>
+</head>
+<header class = "header">
+    <div class="header__text">
+        ToDo List
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="content__tittle">
+                ToDo List
+            </div>
+            <div class="content__form">
+                <div class="content__input">
+                    <input type="text" class = "content__input" placeholder="New Task">
+
+                </div>
+                <div class="content__btn">
+                    <button onclick="addingTask()" class="content__button">Add</button>
+                </div>
+            </div>
+            <div class="content__list">
+                <ul class="content__tasks"></ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
