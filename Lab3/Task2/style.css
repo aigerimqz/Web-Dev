@@ -61,6 +61,15 @@ body{
     border: none;
     font-size: 16px;
 }
+.content__button:hover{
+    background-color: rgb(86, 17, 151);
+
+}
+.content__button:active{
+    color: rgb(125, 18, 224);
+    background-color: rgb(203, 169, 235);
+
+}
 .content__list li{
     display: flex;
     justify-content: space-between;
@@ -71,7 +80,7 @@ body{
     
 }
 .completed{
-    color: #999999;
+    color: #666666;
     text-decoration: line-through;
 }
 .content__tasks {
@@ -90,13 +99,16 @@ body{
 ul{
     align-items: center;
 }
-.delete-btn{
+.delete__btn{
     
     background: none;
     cursor: pointer;
     border: none;
 
 }
-.delete-btn img{
+.delete__btn img{
     width: 24px;
 }
+/* .delete__btn:hover{
+    background-image: url("./images/trash1.png");
+} */

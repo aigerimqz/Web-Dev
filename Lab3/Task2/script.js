@@ -20,7 +20,7 @@ function addTask() {
     taskContainer.append(checkbox, taskText);
 
     let deleteBtn = document.createElement("button");
-    deleteBtn.className = "delete-btn";
+    deleteBtn.className = "delete__btn";
     deleteBtn.onclick = () => li.remove();
 
     let trashIcon = document.createElement("img");
