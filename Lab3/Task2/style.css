@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: rgb(56, 3, 105);
+    padding: 10px 50px;
+
+}
+.header__text {
+    font-size: 48px;
+    color: rgb(182, 179, 229);
+    font-weight: 600;
+
+}
+body{
+    /* background-image: url("./images/bck.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.container {
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content__tittle {
+    font-size: 36px;
+    font-weight: 600;
+    color: (182, 179, 229);
+}
+.content__form {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content__input {
+    padding: 10px 10px;
+    width: 400px;
+
+}
+.content__btn {
+    padding: 10px 10px;
+
+
+}
+.content__button {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+.content__list {
+}
+.content__tasks {
+}
