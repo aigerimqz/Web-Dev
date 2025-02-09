@@ -8,6 +8,14 @@ function addTask() {
     checkbox.type = "checkbox";
     checkbox.onchange = () => li.classList.toggle("completed");
 
+    let taskLine = document.createElement("span");
+    taskLine.textContent = task;
+
+    let deleteBtn = document.createElement("button");
+    // 
+    deleteBtn.className = "delete__btn";
+    deleteBtn.onclick = () => li.remove();
+
     li.append(checkbox, task);
     document.getElementById("taskList").appendChild(li);
     input.value = "";
