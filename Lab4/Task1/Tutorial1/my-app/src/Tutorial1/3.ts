@@ -12,7 +12,7 @@ export class UserComponent {
 
 @Component({
   selector: 'app-root',
-  template: ``,
-  imports: [],
+  template: `<section><app-user/></section>`,
+  imports: [UserComponent],
 })
 export class AppComponent {}
