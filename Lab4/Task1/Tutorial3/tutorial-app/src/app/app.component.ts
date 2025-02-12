@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {ArticleCommentsComponent} from './article-comments.component';
 
+
 @Component({
   selector: 'app-root',
   template: `
