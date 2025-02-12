@@ -16,7 +16,7 @@ import {ArticleCommentsComponent} from './article-comments.component';
         </p>
       </article>
       <button type = "button" #showComments> Show all comments </button>
-      @defer (on hover) {
+      @defer (on hover; on interaction(showComments)) {
         <article-comments />
       } @placeholder (minimum 1s) {
         <p>Placeholder for comments</p>  
