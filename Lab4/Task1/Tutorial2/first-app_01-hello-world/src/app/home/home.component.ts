@@ -3,7 +3,7 @@ import { HousingLocationComponent } from '../housing-location/housing-location.c
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [HousingLocationComponent],
   template: `
     <section>
       <form>
