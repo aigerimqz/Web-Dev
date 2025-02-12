@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HousingService } from '../housing.service';
 import { Housinglocation } from '../housinglocation';
+import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-details',
@@ -27,6 +28,20 @@ import { Housinglocation } from '../housinglocation';
           <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
         </ul>
       </section>
+      <section class = "listing-apply">
+        <h2 class = "section-heading>Apply now to live here</h2>
+        <form [formGroup] = "applyForm" (submit) = "submitApplication()">
+          <label for = "first-name">First Name</label>
+          <input id = "first-name" type = "text" formControlName = "firstName" />
+
+          <label for = "last-name">Last Name</label>
+          <input id = "last-name" type = "text" formControlName = "lastName" />
+
+          <label for = "email">Email</label>
+          <input id = "email" type = "emial" formControlName = "email" />
+          <button type = "submit" class = "primary">Apply now</button>
+        </form>
+      </section>
     
     </article>
   `,
@@ -36,9 +51,21 @@ export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation: Housinglocation | undefined;
-
+  applyForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email: new FormControl(''),
+  });
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
+  }
+
+  submitApplication(){
+    this.housingService.submitApplication(
+      this.applyForm.value.firstName ?? '',
+      this.applyForm.value.lastName ?? '',
+      this.applyForm.value.email ?? '',
+    );
   }
 }
