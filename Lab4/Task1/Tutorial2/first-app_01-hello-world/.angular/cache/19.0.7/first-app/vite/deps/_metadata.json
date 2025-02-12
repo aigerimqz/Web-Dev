@@ -1,49 +1,58 @@
 {
-  "hash": "c28f0a2a",
-  "configHash": "befd2b4e",
+  "hash": "2f69a411",
+  "configHash": "328df5e5",
   "lockfileHash": "853bd002",
-  "browserHash": "44f9636d",
+  "browserHash": "7cddbad0",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "1ef1422f",
+      "fileHash": "eaec899e",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "5af3c8a8",
+      "fileHash": "17230b63",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "ea5ade84",
+      "fileHash": "86f9a0c7",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "3296d4dc",
+      "fileHash": "f0dd9088",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "5b85dc55",
+      "fileHash": "b003e609",
+      "needsInterop": false
+    },
+    "tslib": {
+      "src": "../../../../../../node_modules/tslib/tslib.es6.mjs",
+      "file": "tslib.js",
+      "fileHash": "fdd725d6",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-YUG275CG": {
-      "file": "chunk-YUG275CG.js"
+    "chunk-K57OEBPT": {
+      "file": "chunk-K57OEBPT.js"
     },
-    "chunk-H5FHZ246": {
-      "file": "chunk-H5FHZ246.js"
+    "chunk-CJMG3ZJI": {
+      "file": "chunk-CJMG3ZJI.js"
     },
-    "chunk-FEKN3U2S": {
-      "file": "chunk-FEKN3U2S.js"
+    "chunk-NC25QNPL": {
+      "file": "chunk-NC25QNPL.js"
+    },
+    "chunk-EPAV4CNQ": {
+      "file": "chunk-EPAV4CNQ.js"
     }
   }
 }
