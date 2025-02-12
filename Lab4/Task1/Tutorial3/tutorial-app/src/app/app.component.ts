@@ -15,8 +15,16 @@ import {ArticleCommentsComponent} from './article-comments.component';
           ergonomic it could possibly be.
         </p>
       </article>
-
-      <article-comments />
+      <button type = "button" #showComments> Show all comments </button>
+      @defer (on hover) {
+        <article-comments />
+      } @placeholder (minimum 1s) {
+        <p>Placeholder for comments</p>  
+      } @loading (minimum 1s; after 500ms){
+       <p>Loading comments...</p>
+      } @error {
+        <p>Failed to load comments</p>
+      }
 
     </div>
   `,
