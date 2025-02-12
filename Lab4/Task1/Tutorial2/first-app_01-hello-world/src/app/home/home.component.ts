@@ -23,15 +23,11 @@ import { HousingService } from '../housing.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  // readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
 
   housingLocationList: Housinglocation[] = []
   housingService: HousingService = inject(HousingService);
   filteredLocationList: Housinglocation[] = [];
-  // constructor(){
-  //   this.housingLocationList = this.housingService.getAllHousingLocations();
-  //   this.filteredLocationList = this.housingLocationList;
-  // }
+  
   constructor() {
     this.housingService.getAllHousingLocations().then((housingLocationList: Housinglocation[]) => {
       this.housingLocationList = housingLocationList;
