@@ -1,13 +1,17 @@
 .listing {
-    background: rgb(227, 224, 232);
+    background: white;
     border-radius: 20px;
     padding: 20px 20px;
     max-width: 300px;
     max-height: 300px;
+    margin: 20px 20px;
+    
+    
 }
 .listing-photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    
 }
 .listing-text {
 }
