@@ -11,3 +11,11 @@ import { ProductItem } from '../productitem';
 export class ProductItemComponent {
   @Input() productItem!: ProductItem;
 }
+
+shareOnTelega(name: string, link: string){
+  link = encodeURIComponent(link);
+  text = encodeURIComponent(name);
+  const tgLink = "https://telegram.me/share/url?url=${link}&text=${text}";
+  window.open(tgLink, "_blank");
+}
+
