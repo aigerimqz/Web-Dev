@@ -3,6 +3,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 header{
+    
     padding: 10px 30px;
     display: flex;
     justify-content: left;
@@ -14,7 +15,9 @@ header{
 }
 .store-name{
     color: #132743;
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300;
+    margin-left: 12px;
+    
 }

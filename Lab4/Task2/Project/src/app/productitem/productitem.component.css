@@ -2,12 +2,20 @@
     background: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px 20px;
-    max-width: 300px;
-    max-height: 300px;
+    /* max-width: 300px; */
+    /* height: 330px; */
     margin: 20px 20px;
     text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    /* display: flex;
+    flex-direction: column; */
+    row-gap: 10px;
     
     
+}
+.listing:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .listing-photo {
     width: 150px;
@@ -18,6 +26,7 @@
 .listing-text {
     font-size: 20px;
     text-align: center;
+    font-weight: 500;
 }
 .listing-description {
     font-size: 10px;
@@ -28,4 +37,5 @@
 }
 .listing-rating {
     text-align: start;
+    color: gray;
 }
