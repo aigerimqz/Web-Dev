@@ -39,6 +39,28 @@
     text-align: start;
     color: gray;
 }
-button{
+.listing-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
     padding: 10px;
+    background: none;
+    border: #c7b198 2px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px 5px;
+    color: #c7b198;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button-icon{
+    width: 16px;
+    padding-right: 10px;
 }
