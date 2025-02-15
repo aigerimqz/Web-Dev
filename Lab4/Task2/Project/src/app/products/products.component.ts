@@ -15,7 +15,7 @@ export class ProductsComponent {
   {
     id: 1,
     name: 'Apple iPhone 16 Pro Max 256Gb',
-    image: `https://resources.cdn-kaspi.kz/img/m/p/hcf/h69/87295489343518.png?format=gallery-medium`,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/hc4/h62/86641268293662.png',
     description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget. <br>
     This is the most productive device in the Apple iPhone line with a large-scale display,<br> 
     amazing performance and incredible external ergonomics.`,
