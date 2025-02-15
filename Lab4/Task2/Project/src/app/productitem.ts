@@ -4,4 +4,5 @@ export interface ProductItem {
     image: string;
     description: string;
     rating: number; 
+    link: string;
 }
