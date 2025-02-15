@@ -5,8 +5,9 @@
     </form> -->
 </section>
 <section class = "products">
-    <a [href]=""></a>
-    <app-product-item *ngFor="let productItem of productItemList" 
-    [productItem] = "productItem" ></app-product-item>
+    <a *ngFor="let productItem of productItemList" [href]="productItem.link">
+        <app-product-item [productItem] = "productItem" ></app-product-item>
+    </a>
+    
 
 </section>
