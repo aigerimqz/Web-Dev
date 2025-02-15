@@ -8,6 +8,6 @@ import { ProductItem } from '../productitem';
   templateUrl: './productitem.component.html',
   styleUrl: './productitem.component.css'
 })
-export class ProductitemComponent {
+export class ProductItemComponent {
   @Input() productItem!: ProductItem;
 }

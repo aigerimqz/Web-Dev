@@ -1,1 +1,11 @@
 <p>productitem works!</p>
+<section class="listing">
+    <img class = "listing-photo"
+    [src] = "productItem.image"
+    alt = "Exterior photo of {{productItem.name}}"
+    crossorigin
+    />
+    <h2 class = "listing-text">{{productItem.name}}</h2>
+    <p class = "listing-description">{{productItem.description}}</p>
+    <p class = "listing-rating">{{productItem.rating}}</p>
+</section>
