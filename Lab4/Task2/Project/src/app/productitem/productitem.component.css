@@ -15,7 +15,7 @@
 }
 .listing:hover{
     transform: scale(1.05);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .listing-photo {
     width: 150px;
@@ -38,4 +38,7 @@
 .listing-rating {
     text-align: start;
     color: gray;
+}
+button{
+    padding: 10px;
 }

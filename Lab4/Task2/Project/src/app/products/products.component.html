@@ -5,9 +5,10 @@
     </form> -->
 </section>
 <section class = "products">
-    <a *ngFor="let productItem of productItemList" [href]="productItem.link">
+    <!-- <a *ngFor="let productItem of productItemList" [href]="productItem.link">
         <app-product-item [productItem] = "productItem" ></app-product-item>
-    </a>
-    
+    </a> -->
+    <app-product-item *ngFor="let productItem of productItemList"
+     [productItem]="productItem"></app-product-item>
 
 </section>
