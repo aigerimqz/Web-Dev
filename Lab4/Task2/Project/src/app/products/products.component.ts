@@ -15,27 +15,27 @@ export class ProductsComponent {
   {
     id: 1,
     name: 'Apple iPhone 16 Pro Max 256Gb',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hc4/h62/86641268293662.png',
-    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget. <br>
-    This is the most productive device in the Apple iPhone line with a large-scale display,<br> 
+    image: `assets/products/1.jpg`,
+    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget.
+    This is the most productive device in the Apple iPhone line with a large-scale display,
     amazing performance and incredible external ergonomics.`,
     rating: 5.0
   },
   {
     id: 2,
     name: 'Apple iPhone 16 Pro Max 512Gb',
-    image: `https://resources.cdn-kaspi.kz/img/m/p/hcf/h69/87295489343518.png?format=gallery-medium`,
-    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget. <br>
-    This is the most productive device in the Apple iPhone line with a large-scale display,<br> 
+    image: 'https://yoko.ee/cdn/shop/files/Dr.AltheaVitaminCBoostingSerum.webp?v=1729234258',
+    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget.
+    This is the most productive device in the Apple iPhone line with a large-scale display,
     amazing performance and incredible external ergonomics.`,
     rating: 5.0
   },
   {
     id: 3,
     name: 'Apple iPhone 16 Pro Max 1Tb',
-    image: `https://resources.cdn-kaspi.kz/img/m/p/hcf/h69/87295489343518.png?format=gallery-medium`,
-    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget. <br>
-    This is the most productive device in the Apple iPhone line with a large-scale display,<br> 
+    image: 'https://surl.li/tlsjls',
+    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget. 
+    This is the most productive device in the Apple iPhone line with a large-scale display,
     amazing performance and incredible external ergonomics.`,
     rating: 5.0
   }
