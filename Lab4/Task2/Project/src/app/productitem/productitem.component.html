@@ -8,13 +8,13 @@
     <p class = "listing-description">{{productItem.description}}</p>
     <div class="listing-bottom">
         <p class = "listing-rating">{{productItem.rating}}</p>
-        <!-- <div class="share-buttons">
-            <button (click)="shareOnTelega(productItem.name, productItem.link)">Share on Telegram</button>
-            <button (click)="shareOnWhatsApp(productItem.name, productItem.link)">Share on WhatsApp</button>
-        </div> -->
         <div class="share-buttons">
-            <a [href]="'https://telegram.me/share/url?url=' +(productItem.link) + '&text=Myna product tema eken '" target="_blank"></a>
+            <button (click)="shareOnTelega(productItem.name, productItem.link)">Share on Telegram</button>
+            <button (click)="shareOnWhatsapp(productItem.name, productItem.link)">Share on WhatsApp</button>
         </div>
+        <!-- <div class="share-buttons">
+            <a [href]="'https://telegram.me/share/url?url=' +(productItem.link) + '&text=Myna product tema eken '" target="_blank"></a>
+        </div> -->
     </div>
     
 </section>

@@ -13,16 +13,13 @@ export class ProductItemComponent {
   @Input() productItem!: ProductItem;
 
   shareOnTelega(name: string, link: string){
-    const encodedlink = encodeURIComponent(link);
-    const text = encodeURIComponent(name);
-    const tgLink = `https://telegram.me/share/url?url=${encodedlink}&text=${text}`;
+    
+    const tgLink = `https://telegram.me/share/url?url=${link}}&text=Myna product tema eken, qarashy`;
     window.open(tgLink, "_blank");
   }
   
   shareOnWhatsapp(name: string, link: string){
-    const encodedlink = encodeURIComponent(link);
-
-    const waLink = `https:/whatsapp://send?text=${encodedlink}`;
+    const waLink = `https://wa.me/?text=${link}`;
     window.open(waLink, "_blank");
   }
 
