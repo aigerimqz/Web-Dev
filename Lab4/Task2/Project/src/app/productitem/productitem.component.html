@@ -7,9 +7,9 @@
     <h2 class = "listing-text">{{productItem.name}}</h2>
     <p class = "listing-description">{{productItem.description}}</p>
     <div class="listing-bottom">
-        <p class = "listing-rating">{{productItem.rating}}</p>
         <div class="rating-stars">
-            <img *ngFor="let star of getRatingStars(productItem.rating)" [src]="'assets/star.png'" alt="">
+            <p class = "listing-rating">{{productItem.rating}}</p>
+            <img class = "rating-star-icon" *ngFor="let star of getRatingStars(productItem.rating)" [src]="'assets/star.png'" alt="">
         </div>
         <div class="share-buttons">
             <button class = "telega-button button" (click)="shareOnTelega(productItem.name, productItem.link)"><img class = "telega-button-icon button-icon" [src]="'assets/tg.png'">Share on Telegram</button>
