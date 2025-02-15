@@ -15,7 +15,7 @@ export class ProductsComponent {
   {
     id: 1,
     name: 'Anua Heartleaf 77% Soothing Toner',
-    image: 'assets/products/1.jpg',
+    image: 'assets/products/1_1.jpg',
     description: 'Moisturizing facial toner with 77% Houttuynia Cordata extract soothes, hydrates, restores balance, and gently exfoliates.',
     rating: 4.8
   },
