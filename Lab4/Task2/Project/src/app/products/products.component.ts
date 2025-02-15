@@ -14,29 +14,79 @@ export class ProductsComponent {
   productItemList: ProductItem[] = [
   {
     id: 1,
-    name: 'Apple iPhone 16 Pro Max 256Gb',
-    image: `assets/products/1.jpg`,
-    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget.
-    This is the most productive device in the Apple iPhone line with a large-scale display,
-    amazing performance and incredible external ergonomics.`,
-    rating: 5.0
+    name: 'Anua Heartleaf 77% Soothing Toner',
+    image: 'assets/products/1.jpg',
+    description: 'Moisturizing facial toner with 77% Houttuynia Cordata extract soothes, hydrates, restores balance, and gently exfoliates.',
+    rating: 4.8
   },
   {
     id: 2,
-    name: 'Apple iPhone 16 Pro Max 512Gb',
-    image: 'https://yoko.ee/cdn/shop/files/Dr.AltheaVitaminCBoostingSerum.webp?v=1729234258',
-    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget.
-    This is the most productive device in the Apple iPhone line with a large-scale display,
-    amazing performance and incredible external ergonomics.`,
-    rating: 5.0
+    name: 'Dr.Althea Vitamin C Boosting Serum 63%',
+    image: 'assets/products/2.jpg',
+    description: 'Althea Vitamin C Boosting Serum protects against photoaging, boosts elasticity, brightens pigmentation, and evens skin tone.',
+    rating: 4.8
   },
   {
     id: 3,
-    name: 'Apple iPhone 16 Pro Max 1Tb',
-    image: 'https://surl.li/tlsjls',
-    description: `The flagship iPhone 16 Pro Max combines the best features of a modern gadget. 
-    This is the most productive device in the Apple iPhone line with a large-scale display,
-    amazing performance and incredible external ergonomics.`,
+    name: 'Dr.Althea 345 Relief Cream',
+    image: 'assets/products/3.jpg',
+    description: '345 Relief Cream with niacinamide soothes, hydrates, and supports post-acne recovery with panthenol and cactus extract.',
+    rating: 5.0
+  },
+  {
+    id: 4,
+    name: 'Celimax Dual Barrier Creamy Toner',
+    image: 'assets/products/4.jpg',
+    description: 'Celimax Dual Barrier Creamy Toner hydrates, nourishes, strengthens the skin barrier, and soothes dryness and irritation.',
+    rating: 5.0
+  },
+  {
+    id: 5,
+    name: 'Anua Dark Spot Correcting Serum',
+    image: 'assets/products/5.jpg',
+    description: 'Brightening serum with niacinamide and tranexamic acid targets hyperpigmentation and evens skin tone.',
+    rating: 5.0
+  },
+  {
+    id: 6,
+    name: 'Anua Peach 70% Niacin Serum',
+    image: 'assets/products/6.jpg',
+    description: 'Peach serum smooths, refines texture, tightens pores, controls oil, and brightens skin tone.',
+    rating: 5.0
+  },
+  {
+    id: 7,
+    name: 'Anua Heartleaf Quercetinol Deep Pore Cleansing Foam',
+    image: 'assets/products/7.jpg',
+    description: 'Creamy scrub with Houttuynia leaf particles gently exfoliates, smooths skin, tightens pores, and has a refreshing eucalyptus scent.',
+    rating: 5.0
+  },
+  {
+    id: 8,
+    name: 'Centella Probio-Cica Intensive Ampoule',
+    image: 'assets/products/8.jpg',
+    description: 'High-concentration probiotic ampoule restores, hydrates, nourishes, and provides anti-aging benefits.',
+    rating: 5.0
+  },
+  {
+    id: 9,
+    name: 'Dr.G Red Blemish Clear Soothing Cream',
+    image: 'assets/products/9.jpg',
+    description: 'Restorative cream with 5 types of Centella balances moisture, soothes irritation, strengthens the skin barrier, and reduces redness.',
+    rating: 5.0
+  },
+  {
+    id: 10,
+    name: 'Beauty of Joseon Relief Sun Rice Probiotic SPF50+',
+    image: 'assets/products/10.jpg',
+    description: 'Probiotic sunscreen protects against UV damage, soothes, brightens, and supports the skin barrier. Lightweight, non-sticky, and absorbs for a natural glow without a white cast.',
+    rating: 5.0
+  },
+  {
+    id: 11,
+    name: 'Anua Hearleaf Pore Control Cleansing Oil',
+    image: 'assets/products/11.jpg',
+    description: 'Cleansing Oil gently removes makeup, unclogs pores, controls sebum, and refreshes skin with avocado oil.',
     rating: 5.0
   }
   ];
