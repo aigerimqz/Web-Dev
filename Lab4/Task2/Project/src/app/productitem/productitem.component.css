@@ -41,8 +41,13 @@
 }
 .listing-bottom{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
     align-items: center;
+}
+.share-buttons{
+    display: flex;
+    flex-direction: column;
 }
 
 .button{
@@ -52,12 +57,20 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    margin: 10px 5px;
+    margin: 5px 5px;
     color: #c7b198;
     font-size: 12px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 
+}
+.button:hover{
+    background: #c7b198;
+    color: white;
+    cursor: pointer;
+    .button-icon{
+        filter: brightness(10);
+    }
 }
 
 .button-icon{

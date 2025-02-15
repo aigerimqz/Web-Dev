@@ -12,6 +12,10 @@ import { ProductItem } from '../productitem';
 export class ProductItemComponent {
   @Input() productItem!: ProductItem;
 
+ getRatingStars(rating: number): number[]{
+  return Array(Math.floor(rating)).fill(0);
+ }
+
   shareOnTelega(name: string, link: string){
     
     const tgLink = `https://telegram.me/share/url?url=${link}}&text=Myna product tema eken, qarashy`;
