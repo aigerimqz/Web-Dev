@@ -1,15 +1,21 @@
 <section class="listing">
-    <a class="listing-top-route" [href]="productItem.link">
-        <div class="listing-top">
+    
+    <div class="listing-top">
+        <div class="carousel">
+            <button (click)="prevSlide()">0</button>
             <img class = "listing-photo"
-            [src] = "productItem.image"
+            [src] = "productItem.images[curInd]"
             alt = "Exterior photo of {{productItem.name}}"
             crossorigin
-            />
-            <h2 class = "listing-text">{{productItem.name}}</h2>
-            <p class = "listing-description">{{productItem.description}}</p>
+            >
+            <button (click)="nextSlide()">0</button>
         </div>
-    </a>
+        <a class="listing-top-route" [href]="productItem.link">
+            <h2 class = "listing-text">{{productItem.name}}</h2>
+        </a>
+        <p class = "listing-description">{{productItem.description}}</p>
+    </div>
+    
     
     <div class="listing-bottom">
         <div class="rating-stars">
