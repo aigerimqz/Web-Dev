@@ -20,7 +20,7 @@
     <div class="listing-bottom">
         <div class="rating-stars">
             <p class = "listing-rating">{{productItem.rating}}</p>
-            <img class = "rating-star-icon" *ngFor="let star of getRatingStars(productItem.rating)" [src]="'assets/starrate.png'" alt=""/>
+            <img class = "rating-star-icon" *ngFor="let star of getRatingStars(productItem.rating)" [src]="'assets/starrating.png'" alt=""/>
         </div>
         <div class="share-buttons">
             <button class = "telega-button button" (click)="shareOnTelega(productItem.name, productItem.link)"><img class = "telega-button-icon button-icon" [src]="'assets/tg.png'">Share on Telegram</button>
