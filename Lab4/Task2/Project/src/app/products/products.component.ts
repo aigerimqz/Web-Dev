@@ -99,6 +99,46 @@ export class ProductsComponent {
     description: 'Cleansing Oil gently removes makeup, unclogs pores, controls sebum, and refreshes skin with avocado oil.',
     rating: 4.7,
     link: 'https://kaspi.kz/shop/p/anua-heartleaf-pore-control-cleansing-oil-gidrofil-noe-maslo-200-ml-114393219/?c=750000000'
+  },
+  {
+    id: 12,
+    name: 'Round Lab 1025 Dokdo Cleansing Foam',
+    image: 'assets/products/12.jpg',
+    description: 'A gentle cleansing foam with deep-sea water removes makeup residue and microdust while hydrating the skin.',
+    rating: 4.9,
+    link: 'https://kaspi.kz/shop/p/round-lab-1025-dokdo-penka-150-ml-105850453/?c=750000000'
+  },
+  {
+    id: 13,
+    name: 'AXIS-Y Dark Spot Correcting Glow Serum',
+    image: 'assets/products/13.jpg',
+    description: 'This treatment targets unwanted pigmentation, brightens dark spots and post-acne marks, reduces redness and dullness, and evens out skin tone. ',
+    rating: 4.8,
+    link: 'https://kaspi.kz/shop/p/axis-y-syvorotka-dark-spot-correcting-glow-serum-dlja-litsa-50-ml-121900236/?c=750000000'
+  },
+  {
+    id: 14,
+    name: 'Heimish All Clean Balm',
+    image: 'assets/products/14.jpg',
+    description: 'Heimish All Clean Balm quickly dissolves even long-wearing makeup, deeply cleanses pores, removes excess sebum, and helps reduce blackheads.',
+    rating: 4.5,
+    link: 'https://kaspi.kz/shop/p/heimish-all-clean-balm-gidrofil-nyi-scherbet-120-ml-118982371/?c=750000000'
+  },
+  {
+    id: 15,
+    name: 'Manyo Pure Cleansing Oil',
+    image: 'assets/products/15.jpg',
+    description: 'Manyo Factory Pure Cleansing Oil gently removes makeup while nourishing the skin with a caring botanical complex.',
+    rating: 4.3,
+    link: 'https://kaspi.kz/shop/p/manyo-pure-gidrofil-noe-maslo-200-ml-100375672/?c=750000000'
+  },
+  {
+    id: 16,
+    name: 'LANEIGE Lip Sleeping Mask',
+    image: 'assets/products/16.jpg',
+    description: 'Lip Sleeping Mask EX instantly restores smoothness and softness, deeply hydrates, and prevents dryness and flaking. Its jelly-like texture and fruity aroma provide a comfortable, non-sticky feel.',
+    rating: 4.8,
+    link: 'https://kaspi.kz/shop/p/laneige-maska-lip-sleeping-mask-ex-berry-20-130637405/?c=750000000'
   }
   ];
 }
