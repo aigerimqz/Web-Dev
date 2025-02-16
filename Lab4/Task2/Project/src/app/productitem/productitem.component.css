@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 .carousel-icon:hover{
-    filter: brightness(0.1);
+    filter: brightness(0);
 }
 .listing-text {
     font-size: 20px;
@@ -110,6 +110,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     margin: 15px 0;
 }
