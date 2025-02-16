@@ -2,13 +2,13 @@
     
     <div class="listing-top">
         <div class="carousel">
-            <button (click)="prevSlide()">0</button>
+            <button class = "carousel-button" (click)="prevSlide()"><img class="carousel-icon" [src]="'assets/back.png'" alt=""></button>
             <img class = "listing-photo"
             [src] = "productItem.images[curInd]"
             alt = "Exterior photo of {{productItem.name}}"
             crossorigin
             >
-            <button (click)="nextSlide()">0</button>
+            <button class = "carousel-button" (click)="nextSlide()"><img class="carousel-icon" [src]="'assets/next.png'" alt=""></button>
         </div>
         <a class="listing-top-route" [href]="productItem.link">
             <h2 class = "listing-text">{{productItem.name}}</h2>
