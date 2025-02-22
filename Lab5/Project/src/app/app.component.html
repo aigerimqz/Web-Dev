@@ -3,6 +3,12 @@
     <img class="store-logo" src="https://img.icons8.com/pulsar-color/96/shopaholic.png" alt="logo" aria-hidden="true" />
     <h1 class = "store-name">seora</h1>
   </header>
+  <section class = "navigation">
+    <a *ngFor = "let category of categories" [routerLink]="['/category', category]">
+      {{category}}
+    </a>
+    <router-outlet></router-outlet>
+  </section>
   <section class="content">
     <app-products [productItemList] = "productItemList"></app-products>
     

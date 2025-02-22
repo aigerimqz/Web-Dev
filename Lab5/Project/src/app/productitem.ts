@@ -5,4 +5,5 @@ export interface ProductItem {
     description: string;
     rating: number; 
     link: string;
+    category: string;
 }
