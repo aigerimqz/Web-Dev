@@ -19,6 +19,10 @@ export class AppComponent {
   
   
   selectedCategory: string = 'All';
+
+  selectCategory(category: string){
+    this.selectedCategory = category;
+  }
   
   
 
