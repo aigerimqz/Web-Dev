@@ -159,6 +159,13 @@ export class ProductsComponent {
     }
     ];
 
+  get filteredProducts(): ProductItem[] {
+    if(this.selectedCategory === 'All'){
+      return this.productItemList;
+    }
+    return this.productItemList.filter(p => p.category === this.selectedCategory);
+  }
+
 
  
 }
