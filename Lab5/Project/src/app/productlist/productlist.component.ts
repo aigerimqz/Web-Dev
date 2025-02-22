@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductItemComponent } from '../productitem/productitem.component';
 import { ProductItem } from '../productitem';
-import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -12,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './productlist.component.css'
 })
 export class ProductsComponent {
+  @Input() selectedCategory: string = 'All';
   productItemList: ProductItem[] = [
     {
       id: 1,
