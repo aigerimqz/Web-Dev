@@ -20,7 +20,8 @@ export class ProductsComponent {
       description: 'Moisturizing facial toner with 77% Houttuynia Cordata extract soothes, hydrates, restores balance, and gently exfoliates.',
       rating: 4.8,
       link: 'https://kaspi.kz/shop/p/anua-toner-heartleaf-77-soothing-toner-250-ml-113961265/?c=750000000',
-      category: 'Toner'
+      category: 'Toner',
+      likes: 0
     },
     {
       id: 2,
@@ -29,7 +30,8 @@ export class ProductsComponent {
       description: 'Althea Vitamin C Boosting Serum protects against photoaging, boosts elasticity, brightens pigmentation, and evens skin tone.',
       rating: 4.8,
       link: 'https://kaspi.kz/shop/p/dr-althea-syvorotka-vitamin-c-boosting-serum-63-dlja-litsa-30-ml-128786853/?c=750000000',
-      category: 'Serum'
+      category: 'Serum',
+      likes: 0
     },
     {
       id: 3,
@@ -38,7 +40,8 @@ export class ProductsComponent {
       description: '345 Relief Cream with niacinamide soothes, hydrates, and supports post-acne recovery with panthenol and cactus extract.',
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/dr-althea-krem-345-relief-dlja-litsa-50-ml-115616909/?c=750000000',
-      category: 'Cream'
+      category: 'Cream',
+      likes: 0
     },
     {
       id: 4,
@@ -47,7 +50,8 @@ export class ProductsComponent {
       description: 'Celimax Dual Barrier Creamy Toner hydrates, nourishes, strengthens the skin barrier, and soothes dryness and irritation.',
       rating: 4.5,
       link: 'https://kaspi.kz/shop/p/celimax-toner-dual-barrier-150-ml-108098827/?c=750000000',
-      category: 'Toner'
+      category: 'Toner',
+      likes: 0
     },
     {
       id: 5,
@@ -56,7 +60,8 @@ export class ProductsComponent {
       description: 'Brightening serum with niacinamide and tranexamic acid targets hyperpigmentation and evens skin tone.',
       rating: 4.6,
       link: 'https://kaspi.kz/shop/p/anua-syvorotka-kontsentrat-dark-spot-correcting-10-niacinamide-4-tranexamic-acid-dlja-litsa-30-ml-118426606/?c=750000000',
-      category: 'Serum'
+      category: 'Serum',
+      likes: 0
     },
     {
       id: 6,
@@ -65,7 +70,8 @@ export class ProductsComponent {
       description: 'Peach serum smooths, refines texture, tightens pores, controls oil, and brightens skin tone.',
       rating: 4.7,
       link: 'https://kaspi.kz/shop/p/anua-syvorotka-peach-70-niacin-dlja-litsa-30-ml-114423608/?c=750000000',
-      category: 'Serum'
+      category: 'Serum',
+      likes: 0
     },
     {
       id: 7,
@@ -74,7 +80,8 @@ export class ProductsComponent {
       description: 'Creamy scrub with Houttuynia leaf particles gently exfoliates, smooths skin, tightens pores, and has a refreshing eucalyptus scent.',
       rating: 4.8,
       link: 'https://kaspi.kz/shop/p/anua-heartleaf-quercetinol-deep-pore-cleansing-foam-penka-150-ml-114466905/?c=750000000',
-      category: 'Cleansing Foam'
+      category: 'Cleansing Foam',
+      likes: 0
     },
     {
       id: 8,
@@ -83,7 +90,8 @@ export class ProductsComponent {
       description: 'High-concentration probiotic ampoule restores, hydrates, nourishes, and provides anti-aging benefits.',
       rating: 4.7,
       link: 'https://kaspi.kz/shop/p/skin1004-ampul-naja-syvorotka-madagascar-centella-probio-cica-intensive-ampoule-dlja-litsa-95-ml-118889632/?c=750000000',
-      category: 'Serum'
+      category: 'Serum',
+      likes: 0
     },
     {
       id: 9,
@@ -92,7 +100,8 @@ export class ProductsComponent {
       description: 'Restorative cream with 5 types of Centella balances moisture, soothes irritation, strengthens the skin barrier, and reduces redness.',
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/dr-g-krem-red-blemish-clear-soothing-cream-dlja-litsa-50-ml-116155725/?c=750000000',
-      category: 'Cream'
+      category: 'Cream',
+      likes: 0
     },
     {
       id: 10,
@@ -101,7 +110,8 @@ export class ProductsComponent {
       description: 'Probiotic sunscreen protects against UV damage, soothes, brightens, and supports the skin barrier. Lightweight, non-sticky, and absorbs for a natural glow without a white cast.',
       rating: 4.9,
       link: 'https://kaspi.kz/shop/p/beauty-of-joseon-krem-relief-sun-rice-probiotics-spf50-dlja-litsa-50-ml-105587876/?c=750000000',
-      category: 'Sunscreen'
+      category: 'Sunscreen',
+      likes: 0
     },
     {
       id: 11,
@@ -110,7 +120,8 @@ export class ProductsComponent {
       description: 'Cleansing Oil gently removes makeup, unclogs pores, controls sebum, and refreshes skin with avocado oil.',
       rating: 4.7,
       link: 'https://kaspi.kz/shop/p/anua-heartleaf-pore-control-cleansing-oil-gidrofil-noe-maslo-200-ml-114393219/?c=750000000',
-      category: 'Cleansing Oil'
+      category: 'Cleansing Oil',
+      likes: 0
     },
     {
       id: 12,
@@ -119,7 +130,8 @@ export class ProductsComponent {
       description: 'A gentle cleansing foam with deep-sea water removes makeup residue and microdust while hydrating the skin.',
       rating: 4.9,
       link: 'https://kaspi.kz/shop/p/round-lab-1025-dokdo-penka-150-ml-105850453/?c=750000000',
-      category: 'Cleansing Foam'
+      category: 'Cleansing Foam',
+      likes: 0
     },
     {
       id: 13,
@@ -128,7 +140,8 @@ export class ProductsComponent {
       description: 'This treatment targets unwanted pigmentation, brightens dark spots and post-acne marks, reduces redness and dullness, and evens out skin tone. ',
       rating: 4.8,
       link: 'https://kaspi.kz/shop/p/axis-y-syvorotka-dark-spot-correcting-glow-serum-dlja-litsa-50-ml-121900236/?c=750000000',
-      category: 'Serum'
+      category: 'Serum',
+      likes: 0
     },
     {
       id: 14,
@@ -137,7 +150,8 @@ export class ProductsComponent {
       description: 'Heimish All Clean Balm quickly dissolves even long-wearing makeup, deeply cleanses pores, removes excess sebum, and helps reduce blackheads.',
       rating: 4.5,
       link: 'https://kaspi.kz/shop/p/heimish-all-clean-balm-gidrofil-nyi-scherbet-120-ml-118982371/?c=750000000',
-      category: 'Balm'
+      category: 'Balm',
+      likes: 0
     },
     {
       id: 15,
@@ -146,7 +160,8 @@ export class ProductsComponent {
       description: 'Manyo Factory Pure Cleansing Oil gently removes makeup while nourishing the skin with a caring botanical complex.',
       rating: 4.3,
       link: 'https://kaspi.kz/shop/p/manyo-pure-gidrofil-noe-maslo-200-ml-100375672/?c=750000000',
-      category: 'Cleansing Oil'
+      category: 'Cleansing Oil',
+      likes: 0
     },
     {
       id: 16,
@@ -155,7 +170,8 @@ export class ProductsComponent {
       description: 'Lip Sleeping Mask EX instantly restores smoothness and softness, deeply hydrates, and prevents dryness and flaking. Its jelly-like texture and fruity aroma provide a comfortable, non-sticky feel.',
       rating: 4.8,
       link: 'https://kaspi.kz/shop/p/laneige-maska-lip-sleeping-mask-ex-berry-20-130637405/?c=750000000',
-      category: 'Lip Care'
+      category: 'Lip Care',
+      likes: 0
     }
     ];
 
