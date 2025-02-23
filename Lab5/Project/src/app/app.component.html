@@ -4,12 +4,13 @@
     <h1 class = "store-name">seora</h1>
   </header>
   <section class = "navigation">
-    <a *ngFor = "let category of categories" href="#" (click)="selectCategory(category)">
+    <a *ngFor = "let category of categories" href="#" (click)="selectCategory(category)" class="category-link">
       {{category}}
     </a>
     
   </section>
   <section class="content">
+    <h1 class = "selected-category">{{selectedCategory}}</h1>
     <app-products [selectedCategory] = "selectedCategory"></app-products>
     
   </section>

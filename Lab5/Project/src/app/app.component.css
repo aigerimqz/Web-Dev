@@ -22,5 +22,28 @@ header{
     
 }
 .content{
-    padding-top: 30px;
+    
+    padding: 0 54px;
+    padding-top: 10px;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+
+}
+.category-link{
+    text-decoration: none;
+    color: #132743;
+    padding: 0 15px;
+    
+}
+.category-link:hover{
+    text-decoration: underline solid 1px;
+
+}
+.selected-category{
+    padding: 0 25px;
+    font-size: 48px;
+    
 }
