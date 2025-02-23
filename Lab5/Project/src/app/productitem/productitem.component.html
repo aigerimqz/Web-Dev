@@ -28,11 +28,10 @@
             <button class = "telega-button button" (click)="shareOnTelega(productItem.name, productItem.link)"><img class = "telega-button-icon button-icon" [src]="'assets/tg.png'">Share on Telegram</button>
             <button class = "wa-button button" (click)="shareOnWhatsapp(productItem.name, productItem.link)"><img class="wa-button-icon button-icon" [src]="'assets/wa.png'" alt="">Share on WhatsApp</button>
         </div>
-        <div class="like_button">
-            <p>Likes: {{productItem.likes}}</p>
-            <button class="likebutton" (click)="likeProductItem()"><img [src]="'assets/heart.png'" alt="" class="likebutton-icon"></button>
-        </div>
         
     </div>
-    
+    <div class="like-part">
+        <p class="likecount">Likes: {{productItem.likes}}</p>
+        <button class="likebutton" (click)="likeProductItem()"><img [src]="'assets/heart.png'" alt="" class="likebutton-icon"></button>
+    </div>
 </section>

@@ -139,11 +139,28 @@
     align-items: center;
     margin-bottom: 20px;
 }
-
+.like-part{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
 .likebutton{
     background: none;
     border: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.likecount{
+    padding: 0;
+    margin: 0;
 }
 .likebutton-icon{
-    width: 30px;
+    width: 24px;
+}
+.likebutton-icon:hover{
+    transform: scale(1.2);
+}
+.likebutton-icon:active{
+    transform: scale(0.95);
 }
