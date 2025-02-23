@@ -40,5 +40,10 @@ export class ProductItemComponent {
     this.remove.emit(this.productItem);
   }
 
+  likeProductItem(){
+    this.productItem.likes++;
+    this.like.emit(this.productItem);
+  }
+
 }
 
