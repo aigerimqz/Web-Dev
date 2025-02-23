@@ -139,3 +139,11 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+.likebutton{
+    background: none;
+    border: none;
+}
+.likebutton-icon{
+    width: 30px;
+}
