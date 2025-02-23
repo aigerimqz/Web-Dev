@@ -12,6 +12,7 @@ import { ProductItem } from '../productitem';
 export class ProductItemComponent {
   @Input() productItem!: ProductItem;
   @Output() remove = new EventEmitter<ProductItem>();
+  @Output() like = new EventEmitter<ProductItem>();
 
   getRatingStars(rating: number): number[]{
     return Array(Math.floor(rating)).fill(0);
