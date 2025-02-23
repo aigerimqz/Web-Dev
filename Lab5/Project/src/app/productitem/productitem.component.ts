@@ -36,5 +36,9 @@ export class ProductItemComponent {
     this.curInd = (this.curInd - 1 + this.productItem.images.length) % this.productItem.images.length;
   }
 
+  removeProductItem(){
+    this.remove.emit(this.productItem);
+  }
+
 }
 

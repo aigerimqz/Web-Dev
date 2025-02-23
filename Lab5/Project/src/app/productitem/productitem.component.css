@@ -14,6 +14,24 @@
     
     
 }
+/* .remove-item{
+    display: flex;
+    justify-content: initial;
+    text-align: r;
+
+} */
+.removebutton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+}
+.removebutton-icon:hover{
+    filter: brightness(0);
+}
+.removebutton-icon{
+    width: 24px;
+}
 .listing-top{
     display: flex;
     flex-direction: column;

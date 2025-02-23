@@ -165,6 +165,11 @@ export class ProductsComponent {
     }
     return this.productItemList.filter(p => p.category === this.selectedCategory);
   }
+  
+
+  removeProductItem(productToRemove: ProductItem){
+    this.productItemList = this.productItemList.filter(p => p !== productToRemove);
+  }
 
 
  
