@@ -13,6 +13,8 @@ import { ProductItem } from '../productitem';
 export class ProductsComponent {
   @Input() selectedCategory: string = 'All';
   
+  productFavorite: ProductItem[] = [];
+  
   productItemList: ProductItem[] = [
     {
       id: 1,
@@ -248,17 +250,37 @@ export class ProductsComponent {
     
 
   ];
+  toggleFavorite(productId: number){
+    const product = this.productItemList.find(p => p.id === productId);
+    if(!product) return;
+
+    const index = this.productFavorite.findIndex(p => p.id === productId);
+    if(index !== -1){
+      this.productFavorite.splice(index, 1);
+
+    }else{
+      this.productFavorite.push(product);
+    }
+    console.log('Updated favorites: ', this.productFavorite);
+
+  }
+
   
+ 
+
+  // New method to check if a product is in favorites
+  isProductFavorite(productId: number): boolean {
+    return this.productFavorite.some(p => p.id === productId);
+  }
 
   get filteredProducts(): ProductItem[] {
-    if(this.selectedCategory === 'All'){
+    if (this.selectedCategory === 'All') {
       return this.productItemList;
     }
     return this.productItemList.filter(p => p.category === this.selectedCategory);
   }
-  
 
-  removeProductItem(productToRemove: ProductItem){
+  removeProductItem(productToRemove: ProductItem) {
     this.productItemList = this.productItemList.filter(p => p !== productToRemove);
   }
 

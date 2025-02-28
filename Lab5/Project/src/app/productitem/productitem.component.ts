@@ -11,8 +11,12 @@ import { ProductItem } from '../productitem';
 })
 export class ProductItemComponent {
   @Input() productItem!: ProductItem;
+  @Input() isFavorite: boolean = false;
   @Output() remove = new EventEmitter<ProductItem>();
-  @Output() like = new EventEmitter<ProductItem>();
+  // @Output() like = new EventEmitter<ProductItem>();
+  @Output() favorite = new EventEmitter<number>();
+  
+
 
   getRatingStars(rating: number): number[]{
     return Array(Math.floor(rating)).fill(0);
@@ -41,10 +45,15 @@ export class ProductItemComponent {
     this.remove.emit(this.productItem);
   }
 
-  likeProductItem(){
-    this.productItem.likes++;
-    this.like.emit(this.productItem);
-  }
+  // likeProductItem(){
+  //   this.productItem.likes++;
+  //   this.like.emit(this.productItem);
+  // }
 
+  toggleFavorite(){
+    this.favorite.emit(this.productItem.id);
+    console.log('Toggled favorite for product:', this.productItem.id);
+  }
+ 
 }
 

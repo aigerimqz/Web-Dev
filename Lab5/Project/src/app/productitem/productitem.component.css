@@ -150,7 +150,19 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    
    
+}
+.like-text{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:#c7b198;
+    padding-right: 10px;
+    padding-top: 1px;
+}
+.like-text:hover{
+    color:#8d7a65;
 }
 .likecount{
     padding: 0;

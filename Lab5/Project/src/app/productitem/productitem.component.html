@@ -31,7 +31,6 @@
         
     </div>
     <div class="like-part">
-        <p class="likecount">Likes: {{productItem.likes}}</p>
-        <button class="likebutton" (click)="likeProductItem()"><img [src]="'assets/heart.png'" alt="" class="likebutton-icon"></button>
+        <button class="likebutton" (click)="toggleFavorite()"><span class = "like-text">{{ isFavorite ? 'Delete from favorite' : 'Add to favorite'}}</span><img [src]="'assets/heart.png'" alt="" class="likebutton-icon"></button>
     </div>
 </section>

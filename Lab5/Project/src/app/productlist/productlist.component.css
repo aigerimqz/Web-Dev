@@ -1,6 +1,6 @@
 /* .primary {
 } */
-.product-list {
+.product-list, .favorite-list {
     
     
     margin: 0 auto;
@@ -10,4 +10,7 @@
     
     align-items: stretch;
     width: 100%;
+}
+.favorite-text{
+    font-size: 48px;
 }
