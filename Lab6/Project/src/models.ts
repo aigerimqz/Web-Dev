@@ -1,4 +1,4 @@
-export interface Post {
+export interface AlbumItem {
     userId: number;
     id: number;
     title: string;
@@ -6,6 +6,6 @@ export interface Post {
   
   
 export interface BaseResponse {
-    posts: Post[];
+    albums: AlbumItem[];
 }
   
