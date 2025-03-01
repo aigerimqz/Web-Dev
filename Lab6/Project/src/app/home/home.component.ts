@@ -11,12 +11,6 @@ import { AlbumsService } from '../services/albums.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  albumItemList: AlbumItem[] = [];
-  albumsService: AlbumsService = inject(AlbumsService);
-
-  constructor() {
-    this.albumItemList = this.albumsService.getAllAlbumItems();
-  }
-
+  
 }
 
