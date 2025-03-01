@@ -1,6 +1,6 @@
 <p>albums works!</p>
 
-
-<ul>
+<h2 *ngIf="!loaded">Loading...</h2>
+<ul *ngIf="loaded">
     <li *ngFor="let album of albums"><a routerLink="/albums/{{album.id}}">{{album.id}} {{album.title}}</a></li>
 </ul>
