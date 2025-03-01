@@ -2,9 +2,10 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Album } from '../album';
 import { AlbumService } from '../album.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-albums',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './albums.component.html',
   styleUrl: './albums.component.css'
 })
