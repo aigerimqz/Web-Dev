@@ -9,6 +9,11 @@ import { AlbumPhotosComponent } from "./album-photos/album-photos.component";
 
 const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
+    {path: 'home', component: HomeComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'albums', component: AlbumsComponent},
+    {path: 'albums/:id', component: AlbumDetailComponent},
+    {path: 'albums/:id/photos', component: AlbumPhotosComponent}
 
 ]
 
