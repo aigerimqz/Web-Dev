@@ -1,5 +1,5 @@
 <div>
-    <h3 *ngIf="loaded">Loading...</h3>
+    <h3 *ngIf="!loaded">Loading...</h3>
     <ul *ngIf="loaded">
         <li *ngFor="let albumItem of albums"><a routerLink="/albums/{{albumItem.id}}">{{albumItem.id}}  {{albumItem.title}}</a></li>
     </ul>
