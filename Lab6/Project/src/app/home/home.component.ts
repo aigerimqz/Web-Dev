@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { AlbumsComponent } from '../albums/albums.component';
+import { AlbumItem } from '../albumitem';
+import { AlbumsService } from '../services/albums.service';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +11,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  albumItemList: AlbumItem[] = [];
+  albumsService: AlbumsService = inject(AlbumsService);
+
+  constructor() {
+    this.albumItemList = this.albumsService.getAllAlbumItems();
+  }
 
 }
+
