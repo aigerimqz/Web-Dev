@@ -6,5 +6,9 @@
         <a href="">Albums</a>
         <a href="">About</a>
     </div>
+    <div>
+        <app-albums *ngFor = "let albumItem of albumItemList"
+        [albumItem] = "albumItem"></app-albums>
+    </div>
 
 </div>

@@ -6,7 +6,7 @@ import { AlbumsService } from '../services/albums.service';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, AlbumsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
