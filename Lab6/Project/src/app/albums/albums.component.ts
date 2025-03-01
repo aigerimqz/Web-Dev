@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './albums.component.css'
 })
 export class AlbumsComponent implements OnInit{
-  albums: Album[] = [];
+  albums: any[] = [];
   loaded: boolean = false;
 
 
@@ -17,13 +17,23 @@ export class AlbumsComponent implements OnInit{
     
 
   }
+  // ngOnInit(): void {
+  //   this.albumService.getAlbums().subscribe(
+  //     data => {
+  //       this.albums = data;
+  //     },
+  //     error => {
+  //       console.error('Error fetching albums:', error);
+  //     }
+  //   );
+  // }
   ngOnInit(): void {
       this.getAlbums()
   }
 
   getAlbums(){
     this.albumService.getAlbums().subscribe((baseResponse) => {
-      this.albums = baseResponse.albums;
+      this.albums = baseResponse;
       this.loaded = true;
     });
   }

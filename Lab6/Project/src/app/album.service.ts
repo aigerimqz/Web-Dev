@@ -10,13 +10,13 @@ export class AlbumService {
 
   constructor(private client: HttpClient) { }
 
-  getAlbums(): Observable<BaseResponse>{
-    return this.client.get<BaseResponse>(this.dataUrl);
+  getAlbums(): Observable<any[]>{
+    return this.client.get<any[]>(this.dataUrl);
 
   }
-  getAlbum(id: number): Observable<Album> {
-    return this.client.get<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`);
+  // getAlbum(id: number): Observable<Album> {
+  //   return this.client.get<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`);
 
-  }
+  // }
 
 }
