@@ -1,1 +1,6 @@
 <p>albums works!</p>
+
+<h3 *ngIf="!loaded">Loading...</h3>
+<ul *ngIf="loaded">
+    <li *ngFor="let album of albums">{{album.id}} {{album.title}}</li>
+</ul>
