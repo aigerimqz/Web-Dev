@@ -3,6 +3,7 @@ import { Album } from '../album';
 import { AlbumService } from '../album.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-albums',
   imports: [CommonModule, RouterModule],
@@ -43,6 +44,8 @@ export class AlbumsComponent implements OnInit{
       this.albums = this.albums.filter(album => album.id !== id);
     })
   }
+
+  
 
   // getAlbums() {
   //   this.albumService.getAlbums().subscribe((baseResponse) => {

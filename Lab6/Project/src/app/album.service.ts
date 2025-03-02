@@ -22,4 +22,8 @@ export class AlbumService {
     return this.client.delete(`${this.dataUrl}/${id}`);
   }
 
+  updateAlbum(id: number, title: string): Observable<any> {
+    return this.client.put(`${this.dataUrl}/${id}`, {title});
+  }
+
 }

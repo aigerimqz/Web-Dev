@@ -4,6 +4,6 @@
 <ul *ngIf="loaded">
     <li *ngFor="let album of albums">
         <a routerLink="/albums/{{album.id}}">{{album.id}} {{album.title}}</a>
-        <button class = "delete-button" (click)="deleteAlbum(album.id)"></button>
+        <button class = "delete-button" (click)="deleteAlbum(album.id)">Delete</button>
     </li>
 </ul>
