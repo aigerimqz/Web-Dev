@@ -38,6 +38,11 @@ export class AlbumsComponent implements OnInit{
       this.loaded = true;
     });
   }
+  deleteAlbum(id: number){
+    this.albumService.deleteAlbum(id).subscribe(() => {
+      this.albums = this.albums.filter(album => album.id !== id);
+    })
+  }
 
   // getAlbums() {
   //   this.albumService.getAlbums().subscribe((baseResponse) => {

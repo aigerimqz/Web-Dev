@@ -18,5 +18,8 @@ export class AlbumService {
     return this.client.get<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`);
 
   }
+  deleteAlbum(id: number): Observable<any>{
+    return this.client.delete(`${this.dataUrl}/${id}`);
+  }
 
 }
