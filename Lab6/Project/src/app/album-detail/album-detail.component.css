@@ -1,4 +1,7 @@
 .album-detail {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .container {
     padding: 10px 50px;
@@ -8,6 +11,7 @@
     flex-direction: column;
 }
 .album-detail__title {
+   
     font-size: 48px;
 }
 .album__field {
@@ -18,11 +22,13 @@
     font-size: 24px;
     font-weight: 600;
     padding-right: 15px;
+    
 }
 .album__input {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid gray;
+    width: 300px;
 }
 .album__save {
     padding: 8px;
@@ -30,6 +36,7 @@
     border-radius: 5px;
     background-color: midnightblue;
     color: white;
+    font-weight: 600;
     border: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -45,18 +52,80 @@
     
 }
 .album-detail__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+    
 }
 .album__loading {
 }
 .album-detail__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 .album__id {
+    font-size: 20px;
+    padding-right: 10px;
+    
 }
 .album__title {
+    font-size: 24px;
+    font-weight: 600;
 }
 .album-detail__nav {
+    display: flex;
+    justify-content: center;
+   
 }
 .album-detail__link {
+   
+    padding: 24px 0;
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(53, 53, 180);
+}
+
+.album-detail__link:hover{
+    color: midnightblue;
+    transform: scale(1.1);
 }
 .album-detail__back {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: midnightblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/* .album-detail__back:hover{
+    transform: scale(1.3);
+   
+} */
+
+
+.album-detail__back:disabled {
+  pointer-events: none;
+}
+
+.album-detail__back:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.album-detail__back:active {
+    background-color: white;
+    color: midnightblue;
+    border: 1px solid midnightblue;
+  box-shadow: none;
+  transform: translateY(0);
 }

@@ -5,17 +5,19 @@
             <p class="album-detail__text">Update the title of album:</p>
             <div class="album__field">
                 <p class="album__text">Title:</p>
-                <input class="album__input" [(ngModel)]="newTitle">
+                <input class="album__input" [(ngModel)]="newTitle" placeholder="Type the new title" type="text">
                 <button class="album__save" (click)="saveTitle()">Save</button>
             </div>
             <div class="album-detail__content">
                 <h3 class="album__loading" *ngIf="!loaded">Loading...</h3>
                 <div class="album-detail__item" *ngIf="album">
-                    <p class="album__id">{{album.id}}</p>
+                    <p class="album__id">Album: #{{album.id}}</p>
                     <p class="album__title">{{album.title}}</p>
                 </div>
                 <div class="album-detail__nav">
                     <a class="album-detail__link" [routerLink]="['/albums', album.id, 'photos']">Photos</a>
+                </div>
+                <div class="album__return">
                     <button class="album-detail__back" (click)="goBack()">Return</button>
                 </div>
             </div>
