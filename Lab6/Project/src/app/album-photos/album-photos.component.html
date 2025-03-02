@@ -1,5 +1,20 @@
-<p>album-photos works!</p>
-<div *ngFor="let photo of photos">
-    <img [src]="photo.thumbnailUrl" alt="photo.title">
-</div>
-<button (click)="goBack()">Return</button>
+<main class="album-photos">
+    <div class="container">
+        <div class="album-photos__items">
+            <h1 class="album-photos__title">Album Photos</h1>
+            <div class="album-photos__content" *ngFor="let photo of photos">
+                <div class="album-photos__item">
+                    <img [src]="photo.thumbnailUrl" alt="photo.title">
+
+                </div>
+            </div>
+            <div class="album-photos__btn">
+                <button class="album-photos__back"  (click)="goBack()">Return</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
