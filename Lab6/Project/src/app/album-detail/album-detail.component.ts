@@ -4,9 +4,10 @@ import { Album } from '../album';
 import { Location } from '@angular/common';
 import { AlbumService } from '../album.service';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-album-detail',
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './album-detail.component.html',
   styleUrl: './album-detail.component.css'
 })
