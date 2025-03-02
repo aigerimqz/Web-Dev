@@ -1,14 +1,20 @@
 <header>
   <div class="container">
-    <nav class="header__nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-        <li class="nav__item"><a class="nav__link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-        <li class="nav__item"><a class="nav__link" routerLink="/albums" routerLinkActive="active" ariaCurrentWhenActive="page">Albums</a></li>
-      </ul>
-    </nav>
+    <div class="header__items">
+      <h1 class="title">WebSite</h1>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+          <li class="nav__item"><a class="nav__link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+          <li class="nav__item"><a class="nav__link" routerLink="/albums" routerLinkActive="active" ariaCurrentWhenActive="page">Albums</a></li>
+        </ul>
+      </nav>
+  </div>
   </div>
 </header>
 
+<div class="container">
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</div>
+
