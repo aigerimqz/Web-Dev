@@ -8,9 +8,9 @@
 
                 </div>
             </div>
-            <div class="album-photos__content" *ngFor="let photo of photos">
-                <div class="album-photos__item">
-                    <img [src]="photo.thumbnailUrl" alt="photo.title">
+            <div class="album-photos__content" >
+                <div *ngFor="let photo of photos" class="album-photos__item">
+                    <img class="album-photo" [src]="photo.thumbnailUrl" [alt]="photo.title">
 
                 </div>
             </div>

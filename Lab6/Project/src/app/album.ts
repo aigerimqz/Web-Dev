@@ -7,3 +7,7 @@ export interface Album{
 export interface BaseResponse {
     albums: Album[]
 }
+
+export interface AlbumPhoto{
+    
+}

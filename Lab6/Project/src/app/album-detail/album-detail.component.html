@@ -13,7 +13,7 @@
                     <div class="album__loading" *ngIf="!loaded"></div>
 
                 </div>
-                <div class="album-detail__item" *ngIf="album">
+                <div class="album-detail__item" *ngIf="loaded">
                     <p class="album__id">Album: #{{album.id}}</p>
                     <p class="album__title">{{album.title}}</p>
                 </div>
