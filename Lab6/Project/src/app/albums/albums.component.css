@@ -1,16 +1,16 @@
-.albums {
-}
+/* .albums {
+} */
 .container {
     padding: 10px 50px;
 }
-.albums__items {
+/* .albums__items {
 
-}
+} */
 .albums__title {
     font-size: 48px;
 }
-.albums__loading {
-}
+/* .albums__loading {
+} */
 .albums__list {
     list-style: none;
     font-size: 24px;
@@ -38,9 +38,9 @@
     font-size: 36px;
     
 }
-.album__title {
-    /* padding: 0 10px; */
-}
+/* .album__title {
+    
+} */
 .albums__btn {
     background: none;
     border: none;
@@ -59,3 +59,26 @@
 .delete__img:active{
     transform: scale(1);
 }
+
+
+/* HTML: <div class="loader"></div> */
+.albums__loading {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    color:#0000;
+    background: linear-gradient(90deg,#000 25%,#0f349a 0 50%,#765dcf 0 75%,#00A0B0 0) 0 0/400% 100%;
+    -webkit-background-clip:text;
+            background-clip:text;
+    animation:l10 5s infinite cubic-bezier(0.3,1,0,1);
+  }
+  .albums__loading:before {
+    content:"Loading..."
+  }
+  @keyframes l10 {
+    25% {background-position: calc(1*100%/3) 0}
+    50% {background-position: calc(2*100%/3) 0}
+    75% {background-position: calc(3*100%/3) 0}
+    100%{background-position: calc(4*100%/3) 0}
+  }
