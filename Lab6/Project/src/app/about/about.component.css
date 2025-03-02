@@ -1,0 +1,35 @@
+.about{
+    position: absolute;
+    background-image: url("martian.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    width: 100%;
+
+    
+}
+.container{
+    padding: 10px 50px;
+    padding-top: 10%;
+
+    
+    
+}
+.about__items{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title{
+    font-size: 48px;
+}
+.about__text{
+    font-size: 20px;
+}
+.text{
+    color: white;
+}
