@@ -30,9 +30,11 @@
     text-decoration: none;
     color: black;
     
+    
 }
 .albums__link:hover{
-    color: midnightblue;
+    color: rgb(55, 55, 167);
+    
 }
 .album__id {
     padding: 0 15px;
