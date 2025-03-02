@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
 export class AlbumDetailComponent implements OnInit{
   // album: Album | undefined;
   album: any;
-  loaded: boolean = true;
+  loaded: boolean = false;
   newTitle: string = '';
 
   constructor(

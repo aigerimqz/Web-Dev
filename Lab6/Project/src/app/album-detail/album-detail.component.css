@@ -28,7 +28,10 @@
     padding: 10px;
     border-radius: 8px;
     border: 1px solid gray;
-    width: 300px;
+    width: 360px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
 }
 .album__save {
     padding: 8px;
@@ -127,4 +130,31 @@
     border: 1px solid midnightblue;
   box-shadow: none;
   transform: translateY(0);
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    
+}
+.album__loading {
+    padding: 100px 0;
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 36px;
+    color:#0000;
+    background: linear-gradient(90deg,#000 25%,#0f349a 0 50%,#765dcf 0 75%,#00A0B0 0) 0 0/400% 100%;
+    -webkit-background-clip:text;
+            background-clip:text;
+    animation:l10 5s infinite cubic-bezier(0.3,1,0,1);
+}
+.album__loading:before {
+content:"Loading..."
+}
+@keyframes l10 {
+25% {background-position: calc(1*100%/3) 0}
+50% {background-position: calc(2*100%/3) 0}
+75% {background-position: calc(3*100%/3) 0}
+100%{background-position: calc(4*100%/3) 0}
 }

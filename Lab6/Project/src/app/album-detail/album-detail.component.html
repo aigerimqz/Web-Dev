@@ -9,7 +9,10 @@
                 <button class="album__save" (click)="saveTitle()">Save</button>
             </div>
             <div class="album-detail__content">
-                <h3 class="album__loading" *ngIf="!loaded">Loading...</h3>
+                <div class="loading">
+                    <div class="album__loading" *ngIf="!loaded"></div>
+
+                </div>
                 <div class="album-detail__item" *ngIf="album">
                     <p class="album__id">Album: #{{album.id}}</p>
                     <p class="album__title">{{album.title}}</p>

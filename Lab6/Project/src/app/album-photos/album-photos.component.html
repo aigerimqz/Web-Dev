@@ -2,6 +2,12 @@
     <div class="container">
         <div class="album-photos__items">
             <h1 class="album-photos__title">Album Photos</h1>
+
+            <div class="loading">
+                <div class="album__loading" *ngIf="!loaded">
+
+                </div>
+            </div>
             <div class="album-photos__content" *ngFor="let photo of photos">
                 <div class="album-photos__item">
                     <img [src]="photo.thumbnailUrl" alt="photo.title">
