@@ -17,8 +17,11 @@
 }
 .albums__item {
     display: flex;
-
+    
     align-items: center;
+    /* border: 1px solid;
+    border-radius: 10px;
+    margin: 20px 0; */
 }
 .albums__link {
     display: flex;

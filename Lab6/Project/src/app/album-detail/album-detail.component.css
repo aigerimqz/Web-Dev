@@ -1,0 +1,62 @@
+.album-detail {
+}
+.container {
+    padding: 10px 50px;
+}
+.album-detail__items {
+    display: flex;
+    flex-direction: column;
+}
+.album-detail__title {
+    font-size: 48px;
+}
+.album__field {
+    display: flex;
+    align-items: center;
+}
+.album__text {
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: 15px;
+}
+.album__input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+.album__save {
+    padding: 8px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: midnightblue;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.album__save:hover{
+    
+    background-color: white;
+    color: midnightblue;
+    border: 1px solid midnightblue;
+    cursor: pointer;
+}
+.album__save:active{
+    transform: scale(1.1);
+    
+}
+.album-detail__content {
+}
+.album__loading {
+}
+.album-detail__item {
+}
+.album__id {
+}
+.album__title {
+}
+.album-detail__nav {
+}
+.album-detail__link {
+}
+.album-detail__back {
+}
