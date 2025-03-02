@@ -18,6 +18,11 @@ export class AlbumService {
     return this.client.get<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`);
 
   }
+
+  getPhotos(albumId: number): Observable<any[]>{
+    return this.client.get<any[]>(`https://jsonplaceholder.typicode.com/albums/${albumId}/photos`);
+  }
+
   deleteAlbum(id: number): Observable<any>{
     return this.client.delete(`${this.dataUrl}/${id}`);
   }
@@ -26,4 +31,5 @@ export class AlbumService {
     return this.client.put(`${this.dataUrl}/${id}`, {title});
   }
 
+  
 }
