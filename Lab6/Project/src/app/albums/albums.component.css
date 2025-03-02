@@ -1,0 +1,58 @@
+.albums {
+}
+.container {
+    padding: 10px 50px;
+}
+.albums__items {
+
+}
+.albums__title {
+    font-size: 48px;
+}
+.albums__loading {
+}
+.albums__list {
+    list-style: none;
+    font-size: 24px;
+}
+.albums__item {
+    display: flex;
+
+    align-items: center;
+}
+.albums__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    
+}
+.albums__link:hover{
+    color: midnightblue;
+}
+.album__id {
+    padding: 0 15px;
+    font-size: 36px;
+    
+}
+.album__title {
+    /* padding: 0 10px; */
+}
+.albums__btn {
+    background: none;
+    border: none;
+    padding-top: 7px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.delete__img{
+    width: 24px;
+    padding: 0;
+}
+.delete__img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.delete__img:active{
+    transform: scale(1);
+}

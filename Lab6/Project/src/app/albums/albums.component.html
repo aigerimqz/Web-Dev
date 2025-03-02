@@ -1,9 +1,19 @@
-<p>albums works!</p>
+<main class="albums">
+    <div class="container">
+        <div class="albums__items">
+            <h1 class="albums__title">Our Albums</h1>
+            <h2 class="albums__loading" *ngIf="!loaded">Loading...</h2>
+            <ul class="albums__list" *ngIf="loaded">
+                <li class="albums__item" *ngFor="let album of albums">
+                    <button class = "albums__btn" (click)="deleteAlbum(album.id)"><img class="delete__img" src="https://img.icons8.com/?size=100&id=6483&format=png&color=000000" alt=""></button>
 
-<h2 *ngIf="!loaded">Loading...</h2>
-<ul *ngIf="loaded">
-    <li *ngFor="let album of albums">
-        <a routerLink="/albums/{{album.id}}">{{album.id}} {{album.title}}</a>
-        <button class = "delete-button" (click)="deleteAlbum(album.id)">Delete</button>
-    </li>
-</ul>
+                    <a class="albums__link" routerLink="/albums/{{album.id}}">
+                        <p class="album__id">{{album.id}}</p>
+                        <p class="album__title">{{album.title}}</p>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</main>
