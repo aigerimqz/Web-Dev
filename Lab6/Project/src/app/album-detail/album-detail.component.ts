@@ -11,8 +11,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './album-detail.component.css'
 })
 export class AlbumDetailComponent implements OnInit{
-  album: Album | undefined
+  // album: Album | undefined;
+  album: any;
   loaded: boolean = true;
+  newTitle: string = '';
 
   constructor(
     private router: ActivatedRoute,
@@ -35,4 +37,9 @@ export class AlbumDetailComponent implements OnInit{
     })
   }
 
+  saveTitle() {
+    this.albumService.updateAlbum(this.album.id, this.newTitle).subscribe(updatedAlbum => {
+      this.album.title = updatedAlbum.title;
+    })
+  }
 }
