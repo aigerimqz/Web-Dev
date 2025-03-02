@@ -7,5 +7,6 @@
     <h2>{{album.title}}</h2>
 </div>
 <div>
+    <a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
     <button (click)="goBack()">Return</button>
 </div>

@@ -1,10 +1,14 @@
-<h1>Hello</h1>
-<nav>
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-    <li><a routerLink="/albums" routerLinkActive="active" ariaCurrentWhenActive="page">Albums</a></li>
-  </ul>
-</nav>
+<header>
+  <div class="container">
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+        <li class="nav__item"><a class="nav__link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+        <li class="nav__item"><a class="nav__link" routerLink="/albums" routerLinkActive="active" ariaCurrentWhenActive="page">Albums</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
 <router-outlet></router-outlet>

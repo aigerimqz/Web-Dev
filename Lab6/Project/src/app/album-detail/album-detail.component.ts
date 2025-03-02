@@ -5,9 +5,11 @@ import { Location } from '@angular/common';
 import { AlbumService } from '../album.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-album-detail',
-  imports: [CommonModule, FormsModule],
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './album-detail.component.html',
   styleUrl: './album-detail.component.css'
 })
@@ -45,6 +47,6 @@ export class AlbumDetailComponent implements OnInit{
     })
   }
   goBack(){
-    this.router.navigate(['/albums']);
+    this.location.back();
   }
 }
