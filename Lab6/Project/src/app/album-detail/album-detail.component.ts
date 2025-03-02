@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Album } from '../album';
 import { Location } from '@angular/common';
 import { AlbumService } from '../album.service';
@@ -18,14 +18,15 @@ export class AlbumDetailComponent implements OnInit{
   newTitle: string = '';
 
   constructor(
-    private router: ActivatedRoute,
+    private route: ActivatedRoute,
     private location: Location,
-    private albumService: AlbumService){
+    private albumService: AlbumService,
+    private router: Router){
 
   }
 
   ngOnInit(): void {
-      this.router.paramMap.subscribe((params) => {
+      this.route.paramMap.subscribe((params) => {
         let id = Number(params.get('id'));
         this.getAlbum(id);
       })
@@ -42,5 +43,8 @@ export class AlbumDetailComponent implements OnInit{
     this.albumService.updateAlbum(this.album.id, this.newTitle).subscribe(updatedAlbum => {
       this.album.title = updatedAlbum.title;
     })
+  }
+  goBack(){
+    this.router.navigate(['/albums']);
   }
 }
