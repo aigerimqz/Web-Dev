@@ -28,3 +28,10 @@ def categories_list(request):
 def category_item(request, id):
     category = get_object_or_404(Category, id=id)
     return JsonResponse(category.to_json())
+
+
+def category_products(request, id):
+    category = get_object_or_404(Category, id=id)
+    products = Product.objects.filter(category=category)
+    products_json = [p.to_json() for p in products]
+    return JsonResponse(products_json, safe=False)
