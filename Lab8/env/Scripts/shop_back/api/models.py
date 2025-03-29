@@ -7,4 +7,7 @@ class Product(models.Model):
     description = models.TextField(default='')
     count = models.IntegerField()
     is_active = models.BooleanField()
-    
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
