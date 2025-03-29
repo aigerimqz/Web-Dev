@@ -19,6 +19,7 @@ from django.urls import path
 from api import views
 
 urlpatterns = [
-    path('products/', views.test_json)
+    path('products/', views.products_list),
+    path('products/<int:id>', views.product_item)
    
 ]
