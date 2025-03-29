@@ -10,3 +10,7 @@ def test_json(request):
         "gpa": 3.9
     }
     return JsonResponse(data)
+
+def products_list(request):
+    products = Product.objects.all()
+    
