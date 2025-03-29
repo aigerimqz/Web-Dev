@@ -20,6 +20,7 @@ from api import views
 
 urlpatterns = [
     path('products/', views.products_list),
-    path('products/<int:id>', views.product_item)
+    path('products/<int:id>/', views.product_item),
+    path('categories/')
    
 ]

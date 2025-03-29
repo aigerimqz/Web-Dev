@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from api.models import Product
+from api.models import Product, Category
 from django.http import HttpRequest, HttpResponse, JsonResponse
 
 # Create your views here.
@@ -19,3 +19,8 @@ def products_list(request):
 def product_item(request, id):
     product = get_object_or_404(Product, id=id)
     return JsonResponse(product.to_json())
+
+def categories_list(request):
+    categories = Category.objects.all()
+    categories_json = [c.to_json() for c in categories]
+    return JsonResponse(categories_json, safe=False)
