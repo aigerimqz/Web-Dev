@@ -24,3 +24,7 @@ def categories_list(request):
     categories = Category.objects.all()
     categories_json = [c.to_json() for c in categories]
     return JsonResponse(categories_json, safe=False)
+
+def category_item(request, id):
+    category = get_object_or_404(Category, id=id)
+    return JsonResponse(category.to_json())
