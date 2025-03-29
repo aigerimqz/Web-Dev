@@ -13,4 +13,5 @@ def test_json(request):
 
 def products_list(request):
     products = Product.objects.all()
-    
+    products_json = [p.to_json() for p in products]
+    return JsonResponse(products_json, safe=False)
