@@ -6,9 +6,10 @@ class Company(models.Model):
     description = models.TextField(default='')
     city = models.CharField(max_length=100),
     address = models.TextField()
+    new = models.CharField()
 
 class Vacancy(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     salary = models.FloatField()
-    # company = models.ForeignKey(Company)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name="company")
