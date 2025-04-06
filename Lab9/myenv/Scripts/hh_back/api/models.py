@@ -6,7 +6,7 @@ class Company(models.Model):
     description = models.TextField(default='')
     city = models.CharField(max_length=100)
     address = models.TextField(default='')
-    new = models.CharField(max_length=100)
+    
 
     def __str__(self):
         return self.name
@@ -17,8 +17,7 @@ class Company(models.Model):
             "name": self.name,
             "description": self.description,
             "city": self.city,
-            "address": self.address,
-            "new": self.new
+            "address": self.address
 
         }
 

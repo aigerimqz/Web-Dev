@@ -96,4 +96,4 @@ def company_vacancies(request, company_id = None):
 def top_ten_vacancies(request):
     top_vacancies = Vacancy.objects.order_by('-salary')[:10]
     serializer = VacancySerializer(top_vacancies, many = True)
-    return JsonResponse(serializer.data)
+    return JsonResponse(serializer.data, safe=False)
