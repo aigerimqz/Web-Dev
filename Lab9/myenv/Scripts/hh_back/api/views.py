@@ -9,9 +9,17 @@ from api.serializers import CompanySerializer, VacancySerializer
 # # Create your views here.
 @csrf_exempt
 def companies_list(request):
-    companies = Company.objects.all()
-    compnaies_json = [c.to_json() for c in companies]
-    return JsonResponse(compnaies_json, safe=False)
+    if request.method == "GET":
+        companies = Company.objects.all()
+        serializer = CompanySerializer(companies, many=True)
+        return JsonResponse(serializer.data, safe=False)
+    elif request.method == "POST":
+        data = json.loads(request.body)
+        serializer = CompanySerializer(data = data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=201)
+        return JsonResponse(serializer.errors, status=400)
 
 def companies_show(request, company_id = None):
     try:
