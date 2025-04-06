@@ -1,8 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest, JsonResponse
 from api.models import Company, Vacancy
+from django.views.decorators.csrf import csrf_exempt
+import json
+from api.serializers import CompanySerializer, VacancySerializer
+
 
 # # Create your views here.
+@csrf_exempt
 def companies_list(request):
     companies = Company.objects.all()
     compnaies_json = [c.to_json() for c in companies]
