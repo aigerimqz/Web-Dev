@@ -16,14 +16,13 @@ def companies_list(request):
     if request.method == "GET":
         companies = Company.objects.all()
         serializer = CompanySerializer(companies, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
     elif request.method == "POST":
-        data = json.loads(request.body)
-        serializer = CompanySerializer(data = data)
+        serializer = CompanySerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET', 'POST', 'DELETE'])
 def company_detail(request, company_id = None):
