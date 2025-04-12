@@ -49,58 +49,65 @@ class CompanyDetailAPIView(APIView):
 
 
 
-@api_view(['GET', 'POST'])
-def vacancies_list(request):
-    if request.method == "GET":
+
+class VacanciesListAPIView(APIView):
+    def get(self, request):
         vacancies = Vacancy.objects.all()
         serializer = VacancySerializer(vacancies, many=True)
         return Response(serializer.data)
-    elif request.method == "POST":
-      
+    def post(self, request):
         serializer = VacancySerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET', 'POST', 'DELETE'])
-def vacancy_detail(request, vacancy_id = None):
-    try:
-        vacancy = Vacancy.objects.get(pk = vacancy_id)
-    except Vacancy.DoesNotExist as e:
-        return Response({'error': str(e)}, status=status.HTTP_404_NOT_FOUND)
-    if request.method == "GET":
+
+class VacancyDetailAPIView(APIView):
+
+    def get_object(self, vacancy_id):
+        try:
+            return Vacancy.objects.get(pk = vacancy_id)
+        except Vacancy.DoesNotExist as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        
+
+    def get(self, request, vacancy_id):
+        vacancy = self.get_object(vacancy_id)
         serializer = VacancySerializer(vacancy)
         return Response(serializer.data, status=status.HTTP_200_OK)
-    elif request.method == "PUT":
- 
+    def put(self, request, vacancy_id):
+        vacancy = self.get_object(vacancy_id)
         serializer = VacancySerializer(instance = vacancy, data = request.data)
-
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status = status.HTTP_201_CREATED)
-        return Response(serializer.errors, status = status.HTTP_404_NOT_FOUND)
-    elif request.method == "DELETE":
+        return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
+    def delete(self, request, vacancy_id):
+        vacancy = self.get_object(vacancy_id)
         vacancy.delete()
         return Response({'message': 'Vacancy deleted'})
 
-
-@api_view(['GET'])
-def company_vacancies(request, company_id = None):
-    if request.method == "GET":
+class CompanyVacanciesAPIView(APIView):
+    def get_object(self, company_id):
         try: 
-            company = Company.objects.get(pk = company_id)
+            return Company.objects.get(pk = company_id)
         except Company.DoesNotExist:
             return Response({'error': 'Company not found'}, status=status.HTTP_404_NOT_FOUND)
 
+    def get(self, request, company_id):
+        company = self.get_object(company_id)
         vacancies = company.vacancies.all()
         serializer = VacancySerializer(vacancies, many=True)
         return Response(serializer.data)
 
-@api_view(['GET'])
-def top_ten_vacancies(request):
-    if request.method == "GET":
+
+class TopTenVacanciesAPIView(APIView):
+    def get(self, request):
         top_vacancies = Vacancy.objects.order_by('-salary')[:10]
         
         serializer = VacancySerializer(top_vacancies, many = True)
         return Response(serializer.data)
+
+
+
