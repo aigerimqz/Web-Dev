@@ -83,19 +83,22 @@ def vacancy_detail(request, vacancy_id = None):
         return Response({'message': 'Vacancy deleted'})
 
 
-
+@api_view(['GET'])
 def company_vacancies(request, company_id = None):
     if request.method == "GET":
         try: 
             company = Company.objects.get(pk = company_id)
         except Company.DoesNotExist:
-            return JsonResponse({'error': 'Company not found'}, status=404)
+            return Response({'error': 'Company not found'}, status=status.HTTP_404_NOT_FOUND)
 
         vacancies = company.vacancies.all()
         serializer = VacancySerializer(vacancies, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
 
+@api_view(['GET'])
 def top_ten_vacancies(request):
-    top_vacancies = Vacancy.objects.order_by('-salary')[:10]
-    serializer = VacancySerializer(top_vacancies, many = True)
-    return JsonResponse(serializer.data, safe=False)
+    if request.method == "GET":
+        top_vacancies = Vacancy.objects.order_by('-salary')[:10]
+        
+        serializer = VacancySerializer(top_vacancies, many = True)
+        return Response(serializer.data)
