@@ -21,7 +21,21 @@ class CompaniesListAPIView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class CompanyDetailAPIView(APIView):
 
+    def get_object(self, company_id):
+        try:
+            return Company.objects.get(pk = company_id)
+        except Company.DoesNotExist as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        
+        
+    def get(self, request, company_id):
+        ...
+    def put(self, request, company_id):
+        ...
+    def delete(self, request, company_id):
+        ...
 # # Create your views here.
 
 @api_view(['GET', 'POST', 'DELETE'])

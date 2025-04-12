@@ -24,7 +24,7 @@ def companies_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET', 'POST', 'DELETE'])
+@api_view(['GET', 'PUT', 'DELETE'])
 def company_detail(request, company_id = None):
     try:
         company = Company.objects.get(pk = company_id)
@@ -61,7 +61,7 @@ def vacancies_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET', 'POST', 'DELETE'])
+@api_view(['GET', 'PUT', 'DELETE'])
 def vacancy_detail(request, vacancy_id = None):
     try:
         vacancy = Vacancy.objects.get(pk = vacancy_id)
