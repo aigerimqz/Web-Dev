@@ -47,40 +47,40 @@ def company_detail(request, company_id = None):
 
 
 
-@csrf_exempt
+@api_view(['GET', 'POST'])
 def vacancies_list(request):
     if request.method == "GET":
         vacancies = Vacancy.objects.all()
         serializer = VacancySerializer(vacancies, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
     elif request.method == "POST":
-        data = json.loads(request.body)
-        serializer = VacancySerializer(data = data)
+      
+        serializer = VacancySerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@csrf_exempt
+@api_view(['GET', 'POST', 'DELETE'])
 def vacancy_detail(request, vacancy_id = None):
     try:
         vacancy = Vacancy.objects.get(pk = vacancy_id)
     except Vacancy.DoesNotExist as e:
-        return JsonResponse({'error': str(e)}, status=404)
+        return Response({'error': str(e)}, status=status.HTTP_404_NOT_FOUND)
     if request.method == "GET":
         serializer = VacancySerializer(vacancy)
-        return JsonResponse(serializer.data, status=200)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     elif request.method == "PUT":
-        new_data = json.loads(request.body)
-        serializer = VacancySerializer(instance = vacancy, data = new_data)
+ 
+        serializer = VacancySerializer(instance = vacancy, data = request.data)
 
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status = 201)
-        return JsonResponse(serializer.errors, status = 400)
+            return Response(serializer.data, status = status.HTTP_201_CREATED)
+        return Response(serializer.errors, status = status.HTTP_404_NOT_FOUND)
     elif request.method == "DELETE":
         vacancy.delete()
-        return JsonResponse({'message': 'Vacancy deleted'})
+        return Response({'message': 'Vacancy deleted'})
 
 
 
