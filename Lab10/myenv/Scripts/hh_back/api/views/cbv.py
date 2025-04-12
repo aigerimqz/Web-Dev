@@ -8,19 +8,21 @@ from api.models import Company, Vacancy
 from api.serializers import CompanySerializer, VacancySerializer
 
 
-# # Create your views here.
-@api_view(http_method_names=['GET', 'POST'])
-def companies_list(request):
-    if request.method == "GET":
+class CompaniesListAPIView(APIView):
+    def get(self, request):
         companies = Company.objects.all()
         serializer = CompanySerializer(companies, many=True)
         return Response(serializer.data)
-    elif request.method == "POST":
+    def post(self, request):
         serializer = CompanySerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+# # Create your views here.
 
 @api_view(['GET', 'POST', 'DELETE'])
 def company_detail(request, company_id = None):
