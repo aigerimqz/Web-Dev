@@ -1,6 +1,9 @@
-# from api.views import companies_list, company_detail, company_vacancies, top_ten_vacancies, vacancies_list, vacancy_detail
+from api.views import companies_list, company_detail, company_vacancies, top_ten_vacancies, vacancies_list, vacancy_detail
 from django.urls import path
 from api.views import CompaniesListAPIView, CompanyDetailAPIView, VacanciesListAPIView, VacancyDetailAPIView, CompanyVacanciesAPIView, TopTenVacanciesAPIView
+
+
+# Function Based View
 # urlpatterns = [
 #     path('companies/', companies_list),
 #     path('companies/<int:company_id>/', company_detail),
