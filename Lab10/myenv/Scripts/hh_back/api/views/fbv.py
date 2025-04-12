@@ -1,14 +1,17 @@
-from django.shortcuts import render
-from django.http import HttpResponse, HttpRequest, JsonResponse
-from api.models import Company, Vacancy
-from django.views.decorators.csrf import csrf_exempt
 import json
-from api.serializers import CompanySerializer, VacancySerializer
+from rest_framework.decorators import api_view
+from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework import status
 
+
+
+from api.models import Company, Vacancy
+from api.serializers import CompanySerializer, VacancySerializer
+
+
 # # Create your views here.
-@csrf_exempt
+@api_view(http_method_names=['GET', 'POST'])
 def companies_list(request):
     if request.method == "GET":
         companies = Company.objects.all()
@@ -22,7 +25,7 @@ def companies_list(request):
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 
-@csrf_exempt
+@api_view(['GET', 'POST', 'DELETE'])
 def company_detail(request, company_id = None):
     try:
         company = Company.objects.get(pk = company_id)
