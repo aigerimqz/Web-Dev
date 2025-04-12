@@ -29,21 +29,21 @@ def company_detail(request, company_id = None):
     try:
         company = Company.objects.get(pk = company_id)
     except Company.DoesNotExist as e:
-        return JsonResponse({'error': str(e)}, status=404)
+        return Response({'error': str(e)}, status=status.HTTP_404_NOT_FOUND)
     if request.method == "GET":
         serializer = CompanySerializer(company)
-        return JsonResponse(serializer.data, status=200)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     elif request.method == "PUT":
-        new_data = json.loads(request.body)
-        serializer = CompanySerializer(instance = company, data = new_data)
+       
+        serializer = CompanySerializer(instance = company, data = request.data)
 
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status = 201)
-        return JsonResponse(serializer.errors, status = 400)
+            return Response(serializer.data, status = status.HTTP_201_CREATED)
+        return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
     elif request.method == "DELETE":
         company.delete()
-        return JsonResponse({'message': 'Company deleted'})
+        return Response({'message': 'Company deleted'})
 
 
 
