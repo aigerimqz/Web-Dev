@@ -29,35 +29,23 @@ class CompanyDetailAPIView(APIView):
         except Company.DoesNotExist as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
-        
-    def get(self, request, company_id):
-        ...
-    def put(self, request, company_id):
-        ...
-    def delete(self, request, company_id):
-        ...
-# # Create your views here.
 
-@api_view(['GET', 'POST', 'DELETE'])
-def company_detail(request, company_id = None):
-    try:
-        company = Company.objects.get(pk = company_id)
-    except Company.DoesNotExist as e:
-        return Response({'error': str(e)}, status=status.HTTP_404_NOT_FOUND)
-    if request.method == "GET":
+    def get(self, request, company_id):
+        company = self.get_object(company_id)
         serializer = CompanySerializer(company)
         return Response(serializer.data, status=status.HTTP_200_OK)
-    elif request.method == "PUT":
-       
+    def put(self, request, company_id):
+        company = self.get_object(company_id)
         serializer = CompanySerializer(instance = company, data = request.data)
-
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status = status.HTTP_201_CREATED)
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-    elif request.method == "DELETE":
+    def delete(self, request, company_id):
+        company = self.get_object(company_id)
         company.delete()
         return Response({'message': 'Company deleted'})
+# # Create your views here.
 
 
 
