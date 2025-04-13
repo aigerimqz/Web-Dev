@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Company } from '../../models';
 import { CompaniesService } from '../companies.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-company',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   standalone:true,
   templateUrl: './company.component.html',
   styleUrl: './company.component.css'

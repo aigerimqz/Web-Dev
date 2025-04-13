@@ -8,7 +8,7 @@ export interface Company{
 
 export interface Vacancy{
     id: number;
-    tittle: string;
+    name: string;
     description: string;
     salary: number;
     company: number;
