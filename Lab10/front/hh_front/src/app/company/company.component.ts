@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Company } from '../../models';
 import { CompaniesService } from '../companies.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-company',
-  imports: [],
+  imports: [CommonModule],
   standalone:true,
   templateUrl: './company.component.html',
   styleUrl: './company.component.css'
@@ -23,7 +24,7 @@ export class CompanyComponent implements OnInit{
 
   getCompanies(){
     this.companiesService.getCompanies().subscribe((companies) => {
-      this.companies = this.companies;
+      this.companies = companies;
       this.loaded = true;
     });
   }

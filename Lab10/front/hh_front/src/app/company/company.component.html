@@ -1,1 +1,5 @@
 <p>company works!</p>
+<h3 *ngIf="!loaded">Loading...</h3>
+<ul *ngIf="loaded">
+  <li *ngFor="let company of companies">{{company.name}} {{company.description}}</li>
+</ul>
